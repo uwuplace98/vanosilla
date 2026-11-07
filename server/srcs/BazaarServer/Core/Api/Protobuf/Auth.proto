@@ -1,0 +1,71 @@
+// ============================================
+// Vanosilla gRPC API - Authentication Service
+// Schnittstelle: LoginServer <-> BazaarServer
+// ============================================
+
+syntax = "proto3";
+
+package vanosilla;
+
+option csharp_namespace = "Vanosilla.Protobuf";
+
+import "google/protobuf/timestamp.proto";
+
+// -------------------------------------------
+// Request-Types für Auth Check-In
+// -------------------------------------------
+
+message LoginRequest {
+    string account_id = 1;           // User Account ID
+    string character_name = 2;        // Character Name
+    int32 server_id = 3;              // Target Server ID
+
+    google.protobuf.Timestamp login_time = 4;  // Login-Timestamp
+}
+
+// -------------------------------------------
+// Response-Types für Auth Check-In
+// -------------------------------------------
+
+message LoginResponse {
+    bool success = 1;                 // Authentifizierung erfolgreich?
+    string message = 2;               // Fehlermeldung (falls nein)
+    int32 wallet_balance = 3;         // Aktuelles Wallet-Balances in Credits
+    int32 gold_amount = 4;            // Gold-Volumen im Account
+    int32 silver_amount = 5;          // Silver-Amount
+}
+
+// -------------------------------------------
+// Trading Request (Item kaufen/sellen)
+// -------------------------------------------
+
+message TradeRequest {
+    string account_id = 1;              // Sender Account ID
+    int32 item_id = 2;                 // Item ID (aus .dat Dateien)
+    int32 quantity = 3;                // Anzahl der Items
+    int32 operation_type = 4;          // 1=buy, 2=sell, 3=refund
+    float price = 5;                    // Preis pro Stück (optional, für Auto-Trading)
+    string source_server_id = 6;       // Ursprungs-Server ID
+}
+
+// -------------------------------------------
+// Trade Response
+// -------------------------------------------
+
+message TradeResponse {
+    bool success = 1;                   // Transaktion erfolgreich?
+    string message = 2;                 // Erfolgs-/Fehlermeldung
+    float processed_price = 3;          // Abgerechneter Preis (bei Auto-Trading)
+    int32 remaining_balance = 4;        // Rest-Balance nach Transaktion
+}
+
+// -------------------------------------------
+// Health Check Response
+// -------------------------------------------
+
+message HealthResponse {
+    bool healthy = 1;                   // Service läuft?
+    string status = 2;                  // Status ("healthy", "degraded", "unhealthy")
+    int64 uptime_seconds = 3;           // Betriebszeit in Sekunden
+    int32 active_connections = 4;       // Aktive gRPC-Connections
+}

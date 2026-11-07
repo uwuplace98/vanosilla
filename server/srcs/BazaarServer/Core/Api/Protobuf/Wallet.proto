@@ -1,0 +1,76 @@
+// ============================================
+// Vanosilla gRPC API - Wallet Service
+// Schnittstelle: BazaarServer (internes Trading Management)
+// ============================================
+
+syntax = "proto3";
+
+package vanosilla;
+
+option csharp_namespace = "Vanosilla.Protobuf";
+
+import "google/protobuf/timestamp.proto";
+
+// -------------------------------------------
+// Account Balance Query
+// -------------------------------------------
+
+message GetBalanceRequest {
+    string account_id = 1;
+}
+
+message GetBalanceResponse {
+    bool success = 1;
+    float balance_credits = 2;         // Gesamt-Balance in Credits
+    int32 gold_total = 3;              // Gold-Amount
+    int32 silver_total = 4;            // Silver-Amount
+    string currency_symbol = 5;        // Währungssymbol (optional)
+}
+
+// -------------------------------------------
+// Transaction History Query
+// -------------------------------------------
+
+message GetTransactionHistoryRequest {
+    string account_id = 1;
+    int32 limit = 2;                  // Anzahl der Einträge (max 100)
+    int64 offset = 3;                 // Offset für Pagination
+    string start_date = 4;            // Start-Datum (YYYY-MM-DD)
+    string end_date = 5;              // End-Datum (YYYY-MM-DD)
+}
+
+message TransactionItem {
+    string transaction_id = 1;
+    string type = 2;                  // "buy", "sell", "refund"
+    int32 item_id = 3;
+    int32 quantity = 4;
+    float price = 5;
+    google.protobuf.Timestamp timestamp = 6;
+    string source_server_id = 7;
+}
+
+message GetTransactionHistoryResponse {
+    bool success = 1;
+    repeated TransactionItem transactions = 2;
+    int32 total_count = 3;            // Gesamtanzahl aller Einträge
+}
+
+// -------------------------------------------
+// Daily/Monthly Statistics Query
+// -------------------------------------------
+
+message GetDailyStatsRequest {
+    int64 date = 1;                  // Datum in Unix-Timestamp (Tagesstatistik)
+}
+
+message DailyStatItem {
+    google.protobuf.Timestamp date = 1;
+    int32 transaction_count = 2;      // Transaktions-Zahl
+    float total_volume = 3;           // Gesamtvolumen
+    string top_item_id = 4;           // Häufigstes Item ID
+}
+
+message GetDailyStatsResponse {
+    bool success = 1;
+    repeated DailyStatItem daily_stats = 2;
+}
