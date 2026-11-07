@@ -1,25 +1,41 @@
+<!-- BazaarServer Core - Wirtschaftssystem gRPC -->
 <Project Sdk="Microsoft.NET.Sdk.Web">
-
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
-        <OutputPath>..\..\dist\bazaar-server\</OutputPath>
+        <OutputPath>..\..\dist\BazaarServer\</OutputPath>
         <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-        
+
+        <!-- C# Features -->
+        <LangVersion>latest</LangVersion>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <Nullable>enable</Nullable>
+        <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+
+        <!-- MSBuild Settings -->
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     </PropertyGroup>
 
+    <!-- NuGet Dependencies (Web/GRPC) -->
     <ItemGroup>
         <PackageReference Include="Grpc.AspNetCore" Version="2.62.0" />
         <PackageReference Include="protobuf-net.Grpc.AspNetCore" Version="1.1.1" />
+
+        <!-- EF Core PostgreSQL -->
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.4" />
+        <PackageReference Include="Z.EntityFramework.Extensions.EFCore" Version="8.102.2.5" />
+
+        <!-- Caching & Logging -->
+        <PackageReference Include="StackExchange.Redis" Version="2.7.33" />
+        <PackageReference Include="Serilog.AspNetCore" Version="8.0.1" />
     </ItemGroup>
 
+    <!-- Project References (Shared Libraries) -->
     <ItemGroup>
         <ProjectReference Include="..\PhoenixLib.Caching\PhoenixLib.Caching.csproj" />
-        <ProjectReference Include="..\PhoenixLib.Events\PhoenixLib.Events.csproj" />
         <ProjectReference Include="..\PhoenixLib.Logging\PhoenixLib.Logging.csproj" />
         <ProjectReference Include="..\PhoenixLib.Messaging\PhoenixLib.Messaging.csproj" />
         <ProjectReference Include="..\WingsEmu.Communication.gRPC\WingsEmu.Communication.gRPC.csproj" />
         <ProjectReference Include="..\WingsEmu.Health\WingsEmu.Health.csproj" />
-        <ProjectReference Include="..\_plugins\Plugin.ResourceLoader\Plugin.ResourceLoader.csproj" />
         <ProjectReference Include="..\_plugins\Plugin.DB.EF\Plugin.DB.EF.csproj" />
         <ProjectReference Include="..\_plugins\WingsEmu.Plugins.DistributedGameEvents\WingsEmu.Plugins.DistributedGameEvents.csproj" />
     </ItemGroup>
