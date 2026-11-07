@@ -1,0 +1,38 @@
+# Icebreaker Event Configuration
+
+lobby_duration_seconds: 60      # How long to wait for players to join
+round_duration_seconds: 600     # How long the battle lasts
+join_gold_cost: 500             # Gold required to join
+win_gold_reward: 10000          # Gold reward for winning team
+win_reputation_reward: 1000     # Reputation reward for winners
+
+channels:
+  - channel_id: 1
+    instances:
+      # All levels bracket (default for testing)
+      - min_level: 1
+        max_level: 99
+        map_id: 2005
+        portal_x: 10
+        portal_y: 10
+        
+      # Low level bracket
+      - min_level: 1
+        max_level: 30
+        map_id: 2005
+        portal_x: 10
+        portal_y: 10
+        
+      # Mid level bracket  
+      - min_level: 31
+        max_level: 60
+        map_id: 2006
+        portal_x: 10
+        portal_y: 10
+        
+      # High level bracket
+      - min_level: 61
+        max_level: 99
+        map_id: 2007
+        portal_x: 10
+        portal_y: 10

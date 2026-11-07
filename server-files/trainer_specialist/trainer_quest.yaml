@@ -1,0 +1,52 @@
+quests:
+  - mission_type: 0
+    achievement_needed: 75
+    reward_vnum: 2676
+  - mission_type: 1
+    achievement_needed: 1
+    reward_vnum: 9796
+  - mission_type: 2
+    achievement_needed: 2
+    reward_vnum: 9475
+  - mission_type: 3
+    achievement_needed: 3
+    reward_vnum: 9476
+  - mission_type: 4
+    achievement_needed: 10
+    reward_vnum: 9477
+  - mission_type: 5
+    achievement_needed: 25
+    reward_vnum: 9478
+  - mission_type: 6
+    achievement_needed: 200
+    reward_vnum: 9479
+  - mission_type: 7
+    achievement_needed: 1
+    reward_vnum: 9480
+  - mission_type: 8
+    achievement_needed: 1
+    reward_vnum: 9481
+  - mission_type: 9
+    achievement_needed: 1
+    reward_vnum: 9482
+  - mission_type: 10
+    achievement_needed: 50
+    reward_vnum: 9904
+  - mission_type: 11
+    achievement_needed: 50
+    reward_vnum: 9905
+  - mission_type: 12
+    achievement_needed: 25
+    reward_vnum: 9906
+  - mission_type: 13
+    achievement_needed: 10
+    reward_vnum: 9483
+  - mission_type: 14
+    achievement_needed: 5
+    reward_vnum: 9484
+  - mission_type: 15
+    achievement_needed: 25
+    reward_vnum: 2674
+  - mission_type: 16
+    achievement_needed: 40
+    reward_vnum: 2675

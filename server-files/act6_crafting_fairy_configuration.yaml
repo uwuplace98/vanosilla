@@ -1,0 +1,32 @@
+- fairy_type: 0 #Zenas
+  allowed_fairy_vnum: [4129, 4130, 4131, 4132]
+  gold_price: 2_000_000
+  sucess_rate: 10
+  fairy_vnum_created: 4705
+  special_items_needed:
+  - item_vnum: 2434
+    amount: 3
+  - item_vnum: 5875
+    amount: 1
+
+- fairy_type: 1 #Erenia
+  allowed_fairy_vnum: [4129, 4130, 4131, 4132]
+  gold_price: 2_000_000
+  sucess_rate: 10
+  fairy_vnum_created: 4709
+  special_items_needed:
+  - item_vnum: 2435
+    amount: 2
+  - item_vnum: 5876
+    amount: 1
+
+- fairy_type: 2 #Fernon
+  allowed_fairy_vnum: [4129, 4130, 4131, 4132]
+  gold_price: 100_000_000
+  sucess_rate: 100
+  fairy_vnum_created: 4713
+  special_items_needed:
+  - item_vnum: 2444
+    amount: 1
+  - item_vnum: 5877
+    amount: 1

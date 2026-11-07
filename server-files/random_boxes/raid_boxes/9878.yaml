@@ -1,0 +1,22 @@
+random_boxes:
+  - item_vnum: 9878 # Raidbox item vnum - you have to choose it
+    categories:
+      #==================================================
+      - chance: 10000  #1 to 10000   #5% to get rare drop
+        items:
+          - item_vnum: 2396   # 綠晶石
+            quantity: 3
+          - item_vnum: 2397   # 黃晶石
+            quantity: 5
+          - item_vnum: 9287   # 龍S
+            quantity: 3
+          - item_vnum: 2630   # 龍族英雄寶石
+            quantity: 1
+          - item_vnum: 2395   # 藍晶石
+            quantity: 2
+          - item_vnum: 4493   # 8轉戰
+            quantity: 1
+          - item_vnum: 4492   # 8轉弓
+            quantity: 1
+          - item_vnum: 4491   # 8轉咒
+            quantity: 1

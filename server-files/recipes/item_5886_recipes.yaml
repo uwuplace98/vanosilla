@@ -1,0 +1,137 @@
+recipes:
+- item_vnum: 4955
+  quantity: 1
+  producer_item_vnum: 5886
+  items:
+  - item_vnum: 4916
+    quantity: 1
+  - item_vnum: 2805
+    quantity: 90
+  - item_vnum: 2816
+    quantity: 35
+  - item_vnum: 5880
+    quantity: 55
+  - item_vnum: 2811
+    quantity: 90
+  - item_vnum: 5886
+    quantity: 1
+- item_vnum: 4956
+  quantity: 1
+  producer_item_vnum: 5886
+  items:
+  - item_vnum: 4913
+    quantity: 1
+  - item_vnum: 2805
+    quantity: 90
+  - item_vnum: 2816
+    quantity: 35
+  - item_vnum: 5880
+    quantity: 55
+  - item_vnum: 2811
+    quantity: 90
+  - item_vnum: 5886
+    quantity: 1
+- item_vnum: 4957
+  quantity: 1
+  producer_item_vnum: 5886
+  items:
+  - item_vnum: 4766
+    quantity: 1
+  - item_vnum: 2805
+    quantity: 90
+  - item_vnum: 2816
+    quantity: 30
+  - item_vnum: 5880
+    quantity: 60
+  - item_vnum: 2811
+    quantity: 90
+  - item_vnum: 5886
+    quantity: 1
+- item_vnum: 4768
+  quantity: 1
+  producer_item_vnum: 5886
+  items:
+  - item_vnum: 4910
+    quantity: 1
+  - item_vnum: 2805
+    quantity: 90
+  - item_vnum: 2816
+    quantity: 35
+  - item_vnum: 5881
+    quantity: 55
+  - item_vnum: 2811
+    quantity: 90
+  - item_vnum: 5886
+    quantity: 1
+- item_vnum: 4961
+  quantity: 1
+  producer_item_vnum: 5886
+  items:
+  - item_vnum: 4916
+    quantity: 1
+  - item_vnum: 2805
+    quantity: 90
+  - item_vnum: 2816
+    quantity: 35
+  - item_vnum: 5881
+    quantity: 55
+  - item_vnum: 2811
+    quantity: 90
+  - item_vnum: 5886
+    quantity: 1
+- item_vnum: 4962
+  quantity: 1
+  producer_item_vnum: 5886
+  items:
+  - item_vnum: 4913
+    quantity: 1
+  - item_vnum: 2805
+    quantity: 90
+  - item_vnum: 2816
+    quantity: 35
+  - item_vnum: 5881
+    quantity: 55
+  - item_vnum: 2811
+    quantity: 90
+  - item_vnum: 5886
+    quantity: 1
+- item_vnum: 4963
+  quantity: 1
+  producer_item_vnum: 5886
+  items:
+  - item_vnum: 4766
+    quantity: 1
+  - item_vnum: 2805
+    quantity: 90
+  - item_vnum: 2816
+    quantity: 30
+  - item_vnum: 5881
+    quantity: 60
+  - item_vnum: 2811
+    quantity: 90
+  - item_vnum: 5886
+    quantity: 1
+- item_vnum: 4769
+  quantity: 1
+  producer_item_vnum: 5886
+  items:
+  - item_vnum: 4919
+    quantity: 1
+  - item_vnum: 2805
+    quantity: 80
+  - item_vnum: 2816
+    quantity: 40
+  - item_vnum: 5880
+    quantity: 10
+  - item_vnum: 2818
+    quantity: 20
+  - item_vnum: 2819
+    quantity: 10
+  - item_vnum: 2811
+    quantity: 70
+  - item_vnum: 5887
+    quantity: 1
+- item_vnum: 999
+  quantity: 0
+  producer_item_vnum: 5886
+  items: []

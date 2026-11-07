@@ -1,0 +1,29 @@
+recipes:
+- item_vnum: 4034
+  quantity: 1
+  producer_item_vnum: 1887
+  items:
+  - item_vnum: 2353
+    quantity: 20
+  - item_vnum: 2356
+    quantity: 5
+  - item_vnum: 2359
+    quantity: 5
+  - item_vnum: 2371
+    quantity: 2
+  - item_vnum: 1887
+    quantity: 1
+- item_vnum: 4035
+  quantity: 1
+  producer_item_vnum: 1887
+  items:
+  - item_vnum: 2353
+    quantity: 20
+  - item_vnum: 2356
+    quantity: 5
+  - item_vnum: 2360
+    quantity: 5
+  - item_vnum: 2371
+    quantity: 2
+  - item_vnum: 1887
+    quantity: 1

@@ -1,0 +1,42 @@
+# AW80甲
+recipes:
+  - item_vnum: 4626 # 戰
+    quantity: 1
+    producer_map_npc_id: 2033 #武器
+    items:
+      - item_vnum: 4625 #
+        quantity: 1
+      - item_vnum: 2646 #
+        quantity: 50
+      - item_vnum: 2647 #
+        quantity: 50
+  - item_vnum: 4628 # 弓
+    quantity: 1
+    producer_map_npc_id: 2033 #武器
+    items:
+      - item_vnum: 4627 #
+        quantity: 1
+      - item_vnum: 2646 #
+        quantity: 50
+      - item_vnum: 2647 #
+        quantity: 50
+  - item_vnum: 4630 # 咒
+    quantity: 1
+    producer_map_npc_id: 2033 #武器
+    items:
+      - item_vnum: 4629 #
+        quantity: 1
+      - item_vnum: 2646 #
+        quantity: 50
+      - item_vnum: 2647 #
+        quantity: 50
+  - item_vnum: 4632 # 拳
+    quantity: 1
+    producer_map_npc_id: 2033 #武器
+    items:
+      - item_vnum: 4631 #
+        quantity: 1
+      - item_vnum: 2646 #
+        quantity: 50
+      - item_vnum: 2647 #
+        quantity: 50

@@ -1,0 +1,112 @@
+map_id : 2004 # lobby
+portal_from_x: 22
+portal_from_y: 27
+stages:
+#
+#
+# ===============================================================
+# Stage 1
+#
+- stage_id: 1 # need for order list
+  map_id: 2004
+  time_end: 180 # 3 mins calculated in seconds
+  requirements:
+    level:
+      minimum: 1
+      maximum: 99
+  portal:
+    to_x: -1 # random position
+    to_y: -1 # random position
+    from_x: 47
+    from_y: 33
+  waves:
+  - wave:
+    - monster_vnum: 1
+      amount: 1
+    - monster_vnum: 10 
+      amount: 1
+  - wave:
+    - monster_vnum: 1
+      amount: 1
+    - monster_vnum: 3 
+      amount: 1
+  rewards:
+    gold_multiplier: 0 # Not Implemented yet
+    reputation_multiplier: 0 # Not Implemented yet
+    items:
+    - item_vnum: 1012
+      amount: 10
+      rarity: 0
+      upgrade: 0
+#
+#
+# ===============================================================
+# Stage 2
+#
+- stage_id: 2 # need for order list
+  map_id: 15000
+  time_end: 180 # 3 mins calculated in seconds
+  requirements:
+    level:
+      minimum: 1
+      maximum: 99
+  portal:
+    to_x: -1 # random position
+    to_y: -1 # random position
+    from_x: 15
+    from_y: 15
+  waves:
+  - wave:
+    - monster_vnum: 1
+      amount: 1
+    - monster_vnum: 4 
+      amount: 1
+  - wave:
+    - monster_vnum: 1
+      amount: 1
+    - monster_vnum: 5 
+      amount: 1
+  rewards:
+    gold_multiplier: 0 # Not Implemented yet
+    reputation_multiplier: 0 # Not Implemented yet
+    items:
+    - item_vnum: 1012
+      amount: 10
+      rarity: 0
+      upgrade: 0
+#
+#
+# ===============================================================
+# Stage 3
+#
+- stage_id: 3 # need for order list
+  map_id: 2004
+  time_end: 180 # 3 mins calculated in seconds
+  requirements:
+    level:
+      minimum: 1
+      maximum: 99
+  portal:
+    to_x: -1 # random position
+    to_y: -1 # random position
+    from_x: 47
+    from_y: 33
+  waves:
+  - wave:
+    - monster_vnum: 1
+      amount: 1
+    - monster_vnum: 2 
+      amount: 1
+  - wave:
+    - monster_vnum: 1
+      amount: 1
+    - monster_vnum: 2 
+      amount: 1
+  rewards:
+    gold_multiplier: 0 # Not Implemented yet
+    reputation_multiplier: 0 # Not Implemented yet
+    items:
+    - item_vnum: 1012
+      amount: 10
+      rarity: 0
+      upgrade: 0

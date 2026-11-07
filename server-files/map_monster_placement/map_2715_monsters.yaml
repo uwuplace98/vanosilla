@@ -1,0 +1,82 @@
+map_id: 2715
+monsters:
+  - map_monster_id: 15815 #龍蛋
+    vnum: 3199
+    map_x: 65
+    map_y: 102
+    position: 3
+    can_move: false
+  - map_monster_id: 15816 #龍蛋
+    vnum: 3199
+    map_x: 70
+    map_y: 105
+    position: 3
+    can_move: false
+  - map_monster_id: 15817 #龍蛋
+    vnum: 3199
+    map_x: 97
+    map_y: 88
+    position: 3
+    can_move: false
+  - map_monster_id: 15817 #龍蛋
+    vnum: 3199
+    map_x: 105
+    map_y: 87
+    position: 3
+    can_move: false
+  - map_monster_id: 15815 #龍蛋
+    vnum: 3199
+    map_x: 115
+    map_y: 55
+    position: 3
+    can_move: false
+  - map_monster_id: 15816 #龍蛋
+    vnum: 3199
+    map_x: 111
+    map_y: 52
+    position: 3
+    can_move: false
+  - map_monster_id: 15817 #龍蛋
+    vnum: 3199
+    map_x: 90
+    map_y: 27
+    position: 3
+    can_move: false
+  - map_monster_id: 15817 #龍蛋
+    vnum: 3199
+    map_x: 80
+    map_y: 29
+    position: 3
+    can_move: false
+
+  - map_monster_id: 15815 #龍蛋
+    vnum: 3199
+    map_x: 38
+    map_y: 36
+    position: 3
+    can_move: false
+  - map_monster_id: 15816 #龍蛋
+    vnum: 3199
+    map_x: 24
+    map_y: 48
+    position: 3
+    can_move: false
+  - map_monster_id: 15817 #龍蛋
+    vnum: 3199
+    map_x: 31
+    map_y: 85
+    position: 3
+    can_move: false
+  - map_monster_id: 15817 #龍蛋
+    vnum: 3199
+    map_x: 38
+    map_y: 85
+    position: 3
+    can_move: false
+    
+  - map_monster_id: 15815 #龍蛋
+    vnum: 3199
+    map_x: 43
+    map_y: 112
+    position: 3
+    can_move: false

@@ -1,0 +1,362 @@
+# You must have 2 items for the same bearing, one premium & one non premium
+items:
+  - id: 1
+    bearing_id: 1 # 0 ~ 50
+    item_vnum: 1904 # Tarot Card Game x2
+    amount: 2
+    is_super_reward: false
+    is_premium: false
+  - id: 2 # 0 ~ 50
+    bearing_id: 1
+    item_vnum: 5841 # Rune Pack
+    amount: 10
+    is_super_reward: false
+    is_premium: true
+  - id: 3 # 51 ~ 100
+    bearing_id: 2
+    item_vnum: 9041 # Ancelloan (Limited) x5
+    amount: 5
+    is_super_reward: false
+    is_premium: false
+  - id: 4 # 51 ~ 100
+    bearing_id: 2
+    item_vnum: 1286 # Ancelloan's Blessing x8
+    amount: 8
+    is_super_reward: false
+    is_premium: true
+  - id: 5 # 101 ~ 150
+    bearing_id: 3
+    item_vnum: 9074 # Fairy Booster (Limited) x5
+    amount: 5
+    is_super_reward: false
+    is_premium: false
+  - id: 6 # 101 ~ 150
+    bearing_id: 3
+    item_vnum: 1296 # Fairy Booster x8
+    amount: 8
+    is_super_reward: false
+    is_premium: true
+  - id: 7 # 151 ~ 200
+    bearing_id: 4
+    item_vnum: 10028 # Speaker (Limited) x100
+    amount: 100
+    is_super_reward: false
+    is_premium: false
+  - id: 8 # 151 ~ 200
+    bearing_id: 4
+    item_vnum: 1142 # Skin for Kliff x1
+    amount: 1
+    is_super_reward: false
+    is_premium: true
+  - id: 9 # 201 ~ 250
+    bearing_id: 5
+    item_vnum: 9043 # Guardian Blessing (Limited) x5
+    amount: 5
+    is_super_reward: false
+    is_premium: false
+  - id: 10 # 201 ~ 250
+    bearing_id: 5
+    item_vnum: 1285 # Guardian Blessing x8
+    amount: 8
+    is_super_reward: false
+    is_premium: true
+  - id: 11 # 251 ~ 300
+    bearing_id: 6
+    item_vnum: 9024 # Adventurer Pack 30 days (Limited) x1
+    amount: 1
+    is_super_reward: false
+    is_premium: false
+  - id: 12 # 251 ~ 300
+    bearing_id: 6
+    item_vnum: 1276 # Partner Backpack 30 Days
+    amount: 1
+    is_super_reward: false
+    is_premium: true
+  - id: 13 # 301 ~ 350
+    bearing_id: 7
+    item_vnum: 9075 # Soulstone Blessing (Limited) x5
+    amount: 5
+    is_super_reward: false
+    is_premium: false
+  - id: 14 # 301 ~ 350
+    bearing_id: 7
+    item_vnum: 5983 # Laurena Gemstone x200
+    amount: 200
+    is_super_reward: false
+    is_premium: true
+  - id: 15 # 351 ~ 400
+    bearing_id: 8
+    item_vnum: 9463 # Perga Azul (Limited) x30
+    amount: 30
+    is_super_reward: false
+    is_premium: false
+  - id: 16 # 351 ~ 400
+    bearing_id: 8
+    item_vnum: 1364 # Perga Rojo x30
+    amount: 30
+    is_super_reward: false
+    is_premium: true
+  - id: 17 # 401 ~ 450
+    bearing_id: 9
+    item_vnum: 9029 # Pet Basket (Limited) x1
+    amount: 1
+    is_super_reward: false
+    is_premium: false
+  - id: 18 # 401 ~ 450
+    bearing_id: 9
+    item_vnum: 5856 # Partner Slot Expansion
+    amount: 1
+    is_super_reward: false
+    is_premium: true
+  - id: 19 # 451 ~ 500
+    bearing_id: 10
+    item_vnum: 4560 # Indian Bushi
+    amount: 1
+    is_super_reward: true
+    is_premium: false
+  - id: 20 # 451 ~ 500
+    bearing_id: 10
+    item_vnum: 4704 # Puss In Boots
+    amount: 1
+    is_super_reward: true
+    is_premium: true
+  - id: 21 # 501 ~ 550
+    bearing_id: 11
+    item_vnum: 9116 # Fairy Experience Potion (Limited) x5
+    amount: 5
+    is_super_reward: false
+    is_premium: false
+  - id: 22 # 501 ~ 550
+    bearing_id: 11
+    item_vnum: 5370 # Fairy Experience Potion x8
+    amount: 8
+    is_super_reward: false
+    is_premium: true
+  - id: 23 # 551 ~ 600
+    bearing_id: 12
+    item_vnum: 4342 # Speed Booster 7 Dias x1
+    amount: 1
+    is_super_reward: false
+    is_premium: false
+  - id: 24 # 551 ~ 600
+    bearing_id: 12
+    item_vnum: 4342 # Speed Booster 7 Dias x1
+    amount: 1
+    is_super_reward: false
+    is_premium: true
+  - id: 25 # 601 ~ 650
+    bearing_id: 13
+    item_vnum: 2282 # Angel Feather x500
+    amount: 500
+    is_super_reward: false
+    is_premium: false
+  - id: 26 # 601 ~ 650
+    bearing_id: 13
+    item_vnum: 2282 # Angel Feather x1000
+    amount: 1000
+    is_super_reward: false
+    is_premium: true
+  - id: 27 # 651 ~ 700
+    bearing_id: 14
+    item_vnum: 1030 # Full Moon x300
+    amount: 300
+    is_super_reward: false
+    is_premium: false
+  - id: 28 # 651 ~ 700
+    bearing_id: 14
+    item_vnum: 1030 # Full Moon x500
+    amount: 500
+    is_super_reward: false
+    is_premium: true
+  - id: 29 # 701 ~ 750
+    bearing_id: 15
+    item_vnum: 9067 # NosMerchant Medal (7 Days) (Limited) x1
+    amount: 1
+    is_super_reward: false
+    is_premium: false
+  - id: 30 # 701 ~ 750
+    bearing_id: 15
+    item_vnum: 5060 # NosMerchant Medal (30 Days) x1
+    amount: 1
+    is_super_reward: false
+    is_premium: true
+  - id: 31 # 751 ~ 800
+    bearing_id: 16
+    item_vnum: 1366 # Point initialization Potion x4
+    amount: 4
+    is_super_reward: false
+    is_premium: false
+  - id: 32 # 751 ~ 800
+    bearing_id: 16
+    item_vnum: 1366 # Point Initialization x8
+    amount: 8
+    is_super_reward: false
+    is_premium: true
+  - id: 33 # 801 ~ 850
+    bearing_id: 17
+    item_vnum: 9023 # Experience Potion (Limited) x20
+    amount: 20
+    is_super_reward: false
+    is_premium: false
+  - id: 34 # 801 ~ 850
+    bearing_id: 17
+    item_vnum: 5105 # Magic Lamp x1
+    amount: 1
+    is_super_reward: false
+    is_premium: true
+  - id: 35 # 851 ~ 900
+    bearing_id: 18
+    item_vnum: 9464 # Pergaminos Rojos (Limited) x30
+    amount: 30
+    is_super_reward: false
+    is_premium: false
+  - id: 36 # 851 ~ 900
+    bearing_id: 18
+    item_vnum: 9287 # Pergamino Dorado x30
+    amount: 30
+    is_super_reward: false
+    is_premium: true
+  - id: 37 # 901 ~ 950
+    bearing_id: 19
+    item_vnum: 9110 # Partner Skill Ticket (Limited) x5
+    amount: 5
+    is_super_reward: false
+    is_premium: false
+  - id: 38 # 901 ~ 950
+    bearing_id: 19
+    item_vnum: 5931 # Partner Skill Ticket (Single) x5
+    amount: 5
+    is_super_reward: false
+    is_premium: true
+  - id: 39 # 951 ~ 1000
+    bearing_id: 20
+    item_vnum: 5232 # Bici
+    amount: 1
+    is_super_reward: true
+    is_premium: false
+  - id: 40 # 951 ~ 1000
+    bearing_id: 20
+    item_vnum: 5329 # Unicornios
+    amount: 1
+    is_super_reward: true
+    is_premium: true
+  - id: 41 # 1001 ~ 1050
+    bearing_id: 21
+    item_vnum: 1218 # Perga Equipo x30
+    amount: 30
+    is_super_reward: false
+    is_premium: false
+  - id: 42 # 1001 ~ 1050
+    bearing_id: 21
+    item_vnum: 5369 # Perga Dorado Equipo x30
+    amount: 30
+    is_super_reward: false
+    is_premium: true
+  - id: 43 # 1051 ~ 1100
+    bearing_id: 22
+    item_vnum: 1013 # Gillion x2000
+    amount: 2000
+    is_super_reward: false
+    is_premium: false
+  - id: 44 # 1051 ~ 1100
+    bearing_id: 22
+    item_vnum: 5739 # Family XP Booster 3 Days
+    amount: 1
+    is_super_reward: false
+    is_premium: true
+  - id: 45 # 1101 ~ 1150
+    bearing_id: 23
+    item_vnum: 9585 # Tattoo Switch Scroll Random x1
+    amount: 1
+    is_super_reward: false
+    is_premium: false
+  - id: 46 # 1101 ~ 1150
+    bearing_id: 23
+    item_vnum: 9578 # Loa Switch Crystal
+    amount: 1
+    is_super_reward: false
+    is_premium: true
+  - id: 47 # 1151 ~ 1200
+    bearing_id: 24
+    item_vnum: 9466 # Scroll Tatuaje (Limited) x15
+    amount: 15
+    is_super_reward: false
+    is_premium: false
+  - id: 48 # 1151 ~ 1200
+    bearing_id: 24
+    item_vnum: 5815 # Scroll Tatuaje (Limited) x25
+    amount: 25
+    is_super_reward: false
+    is_premium: true
+  - id: 49 # 1201 ~ 1250
+    bearing_id: 25
+    item_vnum: 5812 # Rune Removal Hammer
+    amount: 5
+    is_super_reward: false
+    is_premium: false
+  - id: 50 # 1201 ~ 1250
+    bearing_id: 25
+    item_vnum: 5812 # Perfume x90
+    amount: 10
+    is_super_reward: false
+    is_premium: true
+  - id: 51 # 1251 ~ 1300
+    bearing_id: 26
+    item_vnum: 5874 # Costume Fusion x2
+    amount: 2
+    is_super_reward: false
+    is_premium: false
+  - id: 52 # 1251 ~ 1300
+    bearing_id: 26
+    item_vnum: 5874 # Costume Fusion x4
+    amount: 4
+    is_super_reward: false
+    is_premium: true
+  - id: 53 # 1301 ~ 1350
+    bearing_id: 27
+    item_vnum: 9460 # Scroll Runa (Limited) x15
+    amount: 15
+    is_super_reward: false
+    is_premium: false
+  - id: 54 # 1301 ~ 1350
+    bearing_id: 27
+    item_vnum: 5823 # Scroll Runa x25
+    amount: 25
+    is_super_reward: false
+    is_premium: true
+  - id: 55 # 1351 ~ 1400
+    bearing_id: 28
+    item_vnum: 9771 # Rune Solvent x1
+    amount: 1
+    is_super_reward: false
+    is_premium: false
+  - id: 56 # 1351 ~ 1400
+    bearing_id: 28
+    item_vnum: 9771 # Rune Solvent x2
+    amount: 2
+    is_super_reward: false
+    is_premium: true
+  - id: 57 # 1401 ~ 1450
+    bearing_id: 29
+    item_vnum: 5454 # Hadas (Intento) x1
+    amount: 1
+    is_super_reward: false
+    is_premium: false
+  - id: 58 # 1401 ~ 1450
+    bearing_id: 29
+    item_vnum: 5454 # Hadas (Intento) x3
+    amount: 3
+    is_super_reward: false
+    is_premium: true
+  - id: 59 # 1401 ~ 1450
+    bearing_id: 30
+    item_vnum: 5553 # Gold Wings
+    amount: 1
+    is_super_reward: true
+    is_premium: false
+  - id: 60 # 1401 ~ 1450
+    bearing_id: 30
+    item_vnum: 9777 # Retro Wings
+    amount: 1
+    is_super_reward: true
+    is_premium: true

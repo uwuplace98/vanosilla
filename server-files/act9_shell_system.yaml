@@ -1,0 +1,5 @@
+enchant:
+  gold_cost: 50000
+  items:
+    - vnum: 2282
+      amount: 1

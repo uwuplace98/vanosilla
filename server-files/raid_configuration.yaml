@@ -1,0 +1,4 @@
+raid_map_destroy_delay: 00:00:30
+raid_death_revival_delay: 00:00:20
+raid_slow_mo_delay: 00:00:07
+lives_per_character: 3

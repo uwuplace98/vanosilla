@@ -1,0 +1,13 @@
+upgrade:
+  gold_cost: 200000
+  items:
+    - vnum: 2282
+      amount: 5
+    - vnum: 2284
+      amount: 2
+
+enchant:
+  gold_cost: 50000
+  items:
+    - vnum: 2282
+      amount: 1

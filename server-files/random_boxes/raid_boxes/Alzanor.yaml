@@ -1,0 +1,118 @@
+random_boxes:
+  - item_vnum: 9854 # Raidbox item vnum - you have to choose it
+    categories:
+      #==================================================
+      - chance: 1  #1 to 10000   #0.01% to get legendary drop
+        items:
+          - item_vnum: 9854   # Mother Cuby Raid Seal x99
+            quantity: 20
+      #==================================================
+      - chance: 100  #1 to 10000   #1% to get very rare drop
+        items:
+          - item_vnum: 4262   # 金福
+            quantity: 1
+      #==================================================
+      - chance: 500  #1 to 10000   #5% to get rare drop
+        items:
+          - item_vnum: 4617   # 龍骨劍
+            quantity: 1
+            random_rarity: true
+            minimum_random_rarity: 0
+            maximum_random_rarity: 7
+          - item_vnum: 4619   # 龍弓
+            quantity: 1
+            random_rarity: true
+            minimum_random_rarity: 0
+            maximum_random_rarity: 7
+          - item_vnum: 4621   # 龍魔杖
+            quantity: 1
+            random_rarity: true
+            minimum_random_rarity: 0
+            maximum_random_rarity: 7
+          - item_vnum: 4623   # 龍爪
+            quantity: 1
+            random_rarity: true
+            minimum_random_rarity: 0
+            maximum_random_rarity: 7
+          - item_vnum: 4625   # 龍弩
+            quantity: 1
+            random_rarity: true
+            minimum_random_rarity: 0
+            maximum_random_rarity: 7
+          - item_vnum: 4627   # 龍人匕首
+            quantity: 1
+            random_rarity: true
+            minimum_random_rarity: 0
+            maximum_random_rarity: 7
+          - item_vnum: 4629   # 龍咒槍
+            quantity: 1
+            random_rarity: true
+            minimum_random_rarity: 0
+            maximum_random_rarity: 7
+          - item_vnum: 4631   # 龍玉
+            quantity: 1
+            random_rarity: true
+            minimum_random_rarity: 0
+            maximum_random_rarity: 7
+          - item_vnum: 4633   # 藍龍鱗甲
+            quantity: 1
+            random_rarity: true
+            minimum_random_rarity: 0
+            maximum_random_rarity: 7
+          - item_vnum: 4635   # 龍人偵察服
+            quantity: 1
+            random_rarity: true
+            minimum_random_rarity: 0
+            maximum_random_rarity: 7
+          - item_vnum: 4637   # 龍族研究員長袍
+            quantity: 1
+            random_rarity: true
+            minimum_random_rarity: 0
+            maximum_random_rarity: 7
+          - item_vnum: 4639   # 龍族戰鬥甲
+            quantity: 1
+            random_rarity: true
+            minimum_random_rarity: 0
+            maximum_random_rarity: 7
+          - item_vnum: 4645   # 輕龍骨長靴
+            quantity: 1
+      #==================================================
+      - chance: 3400  #1 to 10000   #34% to get uncommon drop
+        items:
+          - item_vnum: 4641   # 偵察兵帽
+            quantity: 1
+          - item_vnum: 4642   # 高貴的龍角頭飾
+            quantity: 1
+          - item_vnum: 4651   # 天空巢穴手環
+            quantity: 1
+          - item_vnum: 4650   # 三角龍骨手鍊
+            quantity: 1
+          - item_vnum: 4655   # 龍人的幸運項鍊
+            quantity: 1
+          - item_vnum: 9293   # 封印的龍族的武器生產捲軸
+            quantity: 1
+          - item_vnum: 9295   # 封印的龍族的飾品生產捲軸
+            quantity: 1
+      #==================================================
+      - chance: 5999  #1 to 10000   #59.99% to get common drop
+        items:
+          - item_vnum: 2577   # MSG
+            quantity: 1
+          - item_vnum: 9556   # 抗寒藥水
+            quantity: 10
+          - item_vnum: 9553   # 龍血藥水
+            quantity: 20
+          - item_vnum: 9554   # 龍魂藥水
+            quantity: 20
+          - item_vnum: 2626  # 火龍能量
+            quantity: 1
+          - item_vnum: 2627   # 冰龍能量
+            quantity: 1
+          - item_vnum: 2632   # 龍鱗
+            quantity: 1
+          - item_vnum: 2635   # 龍骨
+            quantity: 1
+          - item_vnum: 2623   # 龍之息
+            quantity: 1
+          - item_vnum: 2625   # 龍之結晶
+            quantity: 1

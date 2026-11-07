@@ -1,0 +1,151 @@
+map_id: 129
+npcs:
+- map_npc_id: 1894
+  vnum: 300
+  pos_x: 129
+  pos_y: 129
+  dialog_id: 3
+  quest_dialog_id: 43
+  item_shop:
+    name: "NosVille Information"
+    menu_type: 4
+    shop_type: 1
+    tabs:
+    - items:
+      - item_vnum: 3117
+      - item_vnum: 3118
+      - item_vnum: 3119
+      - item_vnum: 3120
+      - item_vnum: 3113
+      - item_vnum: 3114
+      - item_vnum: 3000
+      - item_vnum: 3002
+      - item_vnum: 3069
+      - item_vnum: 3103
+      - item_vnum: 3001
+      - item_vnum: 3003
+      - item_vnum: 3104
+      - item_vnum: 3004
+      - item_vnum: 3005
+      - item_vnum: 3020
+      - item_vnum: 3021
+      - item_vnum: 3022
+      - item_vnum: 3023
+      - item_vnum: 3028
+      - item_vnum: 3029
+      - item_vnum: 3030
+      - item_vnum: 3031
+      - item_vnum: 3032
+      - item_vnum: 3033
+      - item_vnum: 3034
+      - item_vnum: 3035
+      - item_vnum: 3055
+      - item_vnum: 3086
+      - item_vnum: 3087
+      - item_vnum: 3088
+      - item_vnum: 3089
+      - item_vnum: 3110
+      - item_vnum: 3111
+      - item_vnum: 3090
+      - item_vnum: 3091
+      - item_vnum: 3092
+      - item_vnum: 3093
+      - item_vnum: 3094
+      - item_vnum: 3095
+      - item_vnum: 3056
+      - item_vnum: 3098
+      - item_vnum: 3099
+      - item_vnum: 3059
+      - item_vnum: 3063
+      - item_vnum: 3064
+      - item_vnum: 3096
+      - item_vnum: 3097
+      - item_vnum: 3057
+- map_npc_id: 24801
+  vnum: 502
+  pos_x: 124
+  pos_y: 147
+  effect_delay: 4750
+  dialog_id: 1
+  direction_facing: 3
+  item_shop:
+    name: "Armor Shop"
+    shop_type: 3
+    tabs:
+    - shop_tab_id: 10
+      items:
+      - item_vnum: 2
+      - item_vnum: 4
+      - item_vnum: 9
+      - item_vnum: 18
+      - item_vnum: 32
+      - item_vnum: 46
+      - item_vnum: 19
+      - item_vnum: 21
+      - item_vnum: 23
+      - item_vnum: 25
+      - item_vnum: 69
+      - item_vnum: 73
+      - item_vnum: 75
+      - item_vnum: 77
+      - item_vnum: 33
+      - item_vnum: 35
+      - item_vnum: 37
+      - item_vnum: 39
+      - item_vnum: 79
+      - item_vnum: 81
+      - item_vnum: 83
+      - item_vnum: 85
+      - item_vnum: 47
+      - item_vnum: 49
+      - item_vnum: 51
+      - item_vnum: 53
+      - item_vnum: 87
+      - item_vnum: 89
+      - item_vnum: 91
+      - item_vnum: 93
+    - shop_tab_id: 11
+      items:
+      - item_vnum: 13
+      - item_vnum: 15
+      - item_vnum: 120
+      - item_vnum: 107
+      - item_vnum: 94
+      - item_vnum: 95
+      - item_vnum: 97
+      - item_vnum: 99
+      - item_vnum: 108
+      - item_vnum: 110
+      - item_vnum: 112
+      - item_vnum: 121
+      - item_vnum: 123
+      - item_vnum: 125
+    - shop_tab_id: 12
+      items:
+      - item_vnum: 1035
+      - item_vnum: 1039
+      - item_vnum: 1040
+      - item_vnum: 1041
+      - item_vnum: 1073
+      - item_vnum: 1083
+      - item_vnum: 1219
+        price: 100000
+      - item_vnum: 2081
+      - item_vnum: 2082
+      - item_vnum: 2083
+#      - item_vnum: 2084
+      - item_vnum: 71
+      - item_vnum: 72
+      - item_vnum: 60
+      - item_vnum: 61
+      - item_vnum: 62
+      - item_vnum: 63
+      - item_vnum: 64
+      - item_vnum: 65
+      - item_vnum: 700
+      - item_vnum: 701
+      - item_vnum: 703
+      - item_vnum: 705
+      - item_vnum: 708
+      - item_vnum: 710
+      - item_vnum: 712

@@ -1,0 +1,27 @@
+player_revival_configuration:
+  player_revival_penalization:
+    max_level_without_revival_penalization: 20
+    base_map_revival_penalization_saver: 1012
+    base_map_revival_penalization_saver_amount: 10
+    base_map_revival_penalization_debuff: 44
+    max_level_with_dignity_penalization_increment: 50
+    dignity_penalization_increment_multiplier: 1
+    arena_gold_penalization: 100
+  revival_dialog_delay: 00:00:02
+  forced_revival_delay: 00:00:30
+  act4_seal_revival_delay: 00:00:02
+  act4_revival_delay: 00:00:30
+mate_revival_configuration:
+  mate_instant_revival_penalization_saver:
+  - 10016
+  - 2089
+  mate_instant_revival_penalization_saver_amount: 1
+  partner_instant_revival_penalization_saver:
+  - 10050
+  - 2329
+  partner_instant_revival_penalization_saver_amount: 1
+  delayed_revival_delay: 00:03:00
+  delayed_revival_penalization_saver: 1012
+  delayed_revival_penalization_saver_amount: 5
+  loyalty_death_penalization_amount: 50
+  no_loyalty_death_penalization_min_authority: VipPlus

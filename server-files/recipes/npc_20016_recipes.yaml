@@ -1,0 +1,46 @@
+# AW25
+recipes:
+  - item_vnum: 4713 # 佩拉諾(火)
+    quantity: 1
+    producer_map_npc_id: 20016 #
+    items:
+      - item_vnum: 4129 #艾卡凱姆
+        quantity: 1
+      - item_vnum: 2444 #精靈王
+        quantity: 1
+      - item_vnum: 2339 #$
+        quantity: 2
+  
+  - item_vnum: 4714 # 佩拉諾(水)
+    quantity: 1
+    producer_map_npc_id: 20016 #
+    items:
+      - item_vnum: 4130 #勒特爾
+        quantity: 1
+      - item_vnum: 2444 #精靈王
+        quantity: 1
+      - item_vnum: 2339 #$
+        quantity: 2
+
+  - item_vnum: 4715 # 佩拉諾(光)
+    quantity: 1
+    producer_map_npc_id: 20016 #
+    items:
+      - item_vnum: 4131 #尤米妮克
+        quantity: 1
+      - item_vnum: 2444 #精靈王
+        quantity: 1
+      - item_vnum: 2339 #$
+        quantity: 2
+
+  - item_vnum: 4716 # 佩拉諾(暗)
+    quantity: 1
+    producer_map_npc_id: 20016 #
+    items:
+      - item_vnum: 4132 #帝蒙爾
+        quantity: 1
+      - item_vnum: 2444 #精靈王
+        quantity: 1
+      - item_vnum: 2339 #$
+        quantity: 2
+

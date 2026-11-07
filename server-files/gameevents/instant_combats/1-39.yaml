@@ -1,0 +1,195 @@
+map_id: 2004    #default IC map
+required_damages: 600
+return_portal_x: 47
+return_portal_y: 33
+requirements:
+  level:
+    minimum: 1
+    maximum: 39
+# heroic_level:
+#   minimum: 0
+#   maximum: 0
+  players:
+    minimum: 1
+    maximum: 50
+reward:
+  gold_multiplier: 2000 # 2,000 ~ 98,000
+  reputation_multiplier: 10
+  sp_points_multiplier: 10
+  family_experience: 100
+  dignity: 20
+closing_time: 00:15:00
+pre_wave_long_warning_time: 00:00:40    # "Monsters will show up in 40s"
+pre_wave_soon_warning_time: 00:00:10    # "Monsters are coming..."
+time_left_warnings:
+- 00:05:00    #10min left
+- 00:10:00    #5min left
+- 00:13:00    #2min left
+- 00:14:00    #1min left
+- 00:14:30    #30s left
+- 00:14:50    #10s left
+waves:
+#
+#
+# ===============================================================
+# Wave 1 - The Leader Kenko Raider (Part I)!
+#
+- time_start: 00:00:30
+  time_end: 00:02:45
+  title_key: IC_1_39_W1_TITLE
+
+  monsters:
+  - monster_vnum: 1   # Fox
+    amount: 15
+  - monster_vnum: 58    # Fire Vampie
+    amount: 15
+  - monster_vnum: 107    # Angry Miner
+    amount: 15
+  - monster_vnum: 111     # Tired Chief Miner
+    amount: 15
+  - monster_vnum: 136    # Boing
+    amount: 15
+  drops:
+  - item_vnum: 1046     # Gold
+    bunch_count: 15
+    amount_per_bunch: 2500
+  - item_vnum: 2027     # Fried Chicken
+    bunch_count: 10
+    amount_per_bunch: 20
+  - item_vnum: 2018     # Quick Meal
+    bunch_count: 5
+    amount_per_bunch: 10
+  - item_vnum: 1012     # Seed of Power
+    bunch_count: 5
+    amount_per_bunch: 2
+  - item_vnum: 180     # Amulet of Attack Level
+    bunch_count: 5
+    amount_per_bunch: 1
+#
+#
+# ===============================================================
+# Wave 2 - The Leader Kenko Raider (Part II)!
+#
+- time_start: 00:03:15
+  time_end: 00:05:30
+  title_key: IC_1_39_W2_TITLE
+  
+  monsters:
+  - monster_vnum: 194    # Underworld Devil
+    amount: 15
+  - monster_vnum: 114    # Rookie Koaren Sword Fighter
+    amount: 15
+  - monster_vnum: 99    # Weak Poisonous Hamster
+    amount: 15
+  - monster_vnum: 39    # Baby Wild Pii
+    amount: 15
+  - monster_vnum: 2   # Big Fox
+    amount: 15
+  drops:
+  - item_vnum: 1046     # Gold
+    bunch_count: 15
+    amount_per_bunch: 5000
+  - item_vnum: 1002     # Small Health Potion
+    bunch_count: 10
+    amount_per_bunch: 5
+  - item_vnum: 1005     # Small Mana Potion
+    bunch_count: 10
+    amount_per_bunch: 5
+  - item_vnum: 1012     # Seed of Power
+    bunch_count: 5
+    amount_per_bunch: 2
+  - item_vnum: 181     # Amulet of Defence Level
+    bunch_count: 5
+    amount_per_bunch: 1
+#
+#
+# ===============================================================
+# Wave 3 - The Leader Kenko Raider (Part III)!
+#
+- time_start: 00:06:00
+  time_end: 00:08:15
+  title_key: IC_1_39_W3_TITLE
+
+  monsters:
+  - monster_vnum: 140     # Small Mimic
+    amount: 15
+  - monster_vnum: 100    # Poisonous Hamster
+    amount: 15
+  - monster_vnum: 81    # Tired Pink Jelly
+    amount: 15
+  - monster_vnum: 12    # Small Mufflon
+    amount: 15
+  - monster_vnum: 4     # Dusi-Fox
+    amount: 10
+  drops:
+  - item_vnum: 1046     # Gold
+    bunch_count: 15
+    amount_per_bunch: 7500
+  - item_vnum: 1002     # Small Health Potion
+    bunch_count: 5
+    amount_per_bunch: 10
+  - item_vnum: 1005     # Small Mana Potion
+    bunch_count: 5
+    amount_per_bunch: 10
+  - item_vnum: 1012     # Seed of Power
+    bunch_count: 5
+    amount_per_bunch: 5
+  - item_vnum: 182    # Amulet of Attack and Defence Levels
+    bunch_count: 3
+    amount_per_bunch: 1
+#
+#
+# ===============================================================
+# Wave 4 - The Leader Kenko Raider (Part IV)!
+#
+- time_start: 00:08:45
+  time_end: 00:11:00
+  title_key: IC_1_39_W4_TITLE
+
+  monsters:
+  - monster_vnum: 115    # Koaren Sword Fighter
+    amount: 15
+  - monster_vnum: 112   # Chief Miner
+    amount: 15
+  - monster_vnum: 110   # Strong Expy Miner
+    amount: 15
+  - monster_vnum: 14   # Big Mufflon
+    amount: 15
+  - monster_vnum: 5   # Nervous Dusi-Fox
+    amount: 15
+  drops:
+  - item_vnum: 1046     # Gold
+    bunch_count: 15
+    amount_per_bunch: 10000
+  - item_vnum: 1003     # Small Health Potion
+    bunch_count: 5
+    amount_per_bunch: 15
+  - item_vnum: 1006     # Small Mana Potion
+    bunch_count: 5
+    amount_per_bunch: 15
+  - item_vnum: 1012     # Seed of Power
+    bunch_count: 5
+    amount_per_bunch: 5
+  - item_vnum: 182    # Amulet of Attack and Defence Levels
+    bunch_count: 5
+    amount_per_bunch: 1
+#
+#
+# ===============================================================
+# Wave 5 - The Leader Kenko Raider [BOSS] (End Part)!
+#
+- time_start: 00:11:30
+  time_end: 00:15:00
+  title_key: IC_1_39_W5_TITLE
+
+  monsters:
+  - monster_vnum: 167   # Weak Red Jelly
+    amount: 15
+  - monster_vnum: 137   # Hard Boing
+    amount: 15
+  - monster_vnum: 22   # Grasmandra
+    amount: 15
+  - monster_vnum: 17   # Nervous Ram
+    amount: 8
+  - monster_vnum: 979 # (BOSS) Giant Kenko Raider
+    amount: 1

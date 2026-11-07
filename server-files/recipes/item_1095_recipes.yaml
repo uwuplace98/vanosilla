@@ -1,0 +1,41 @@
+recipes:
+- item_vnum: 1822
+  quantity: 1
+  producer_item_vnum: 1095
+  items:
+  - item_vnum: 1012
+    quantity: 5
+  - item_vnum: 1095
+    quantity: 1
+  - item_vnum: 2073
+    quantity: 10
+- item_vnum: 1823
+  quantity: 1
+  producer_item_vnum: 1095
+  items:
+  - item_vnum: 1012
+    quantity: 7
+  - item_vnum: 1095
+    quantity: 1
+  - item_vnum: 2091
+    quantity: 15
+- item_vnum: 1824
+  quantity: 1
+  producer_item_vnum: 1095
+  items:
+  - item_vnum: 1012
+    quantity: 10
+  - item_vnum: 1095
+    quantity: 1
+  - item_vnum: 2073
+    quantity: 15
+- item_vnum: 1825
+  quantity: 1
+  producer_item_vnum: 1095
+  items:
+  - item_vnum: 1012
+    quantity: 12
+  - item_vnum: 1095
+    quantity: 1
+  - item_vnum: 2094
+    quantity: 10

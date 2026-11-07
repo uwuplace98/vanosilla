@@ -1,0 +1,8 @@
+map_id: 275
+npcs:
+- map_npc_id: 16215
+  vnum: 3352
+  pos_x: 17
+  pos_y: 81
+  direction_facing: 0
+  can_move: true

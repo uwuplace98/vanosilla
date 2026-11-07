@@ -1,0 +1,51 @@
+# 鑲嵌石
+recipes:
+  - item_vnum: 2514 # 
+    quantity: 100
+    producer_map_npc_id: 2034 #
+    items:
+      - item_vnum: 13236 #
+        quantity: 1
+
+  - item_vnum: 2515 # 
+    quantity: 100
+    producer_map_npc_id: 2034 #
+    items:
+      - item_vnum: 13236 #
+        quantity: 1
+  - item_vnum: 2516 # 
+    quantity: 100
+    producer_map_npc_id: 2034 #
+    items:
+      - item_vnum: 13236 #
+        quantity: 1
+  - item_vnum: 2517 # 
+    quantity: 100
+    producer_map_npc_id: 2034 #
+    items:
+      - item_vnum: 13236 #
+        quantity: 1
+  - item_vnum: 2518 # 
+    quantity: 100
+    producer_map_npc_id: 2034 #
+    items:
+      - item_vnum: 13236 #
+        quantity: 1
+  - item_vnum: 2519 # 
+    quantity: 100
+    producer_map_npc_id: 2034 #
+    items:
+      - item_vnum: 13236 #
+        quantity: 1
+  - item_vnum: 2520 # 
+    quantity: 100
+    producer_map_npc_id: 2034 #
+    items:
+      - item_vnum: 13236 #
+        quantity: 1
+  - item_vnum: 2521 # 
+    quantity: 100
+    producer_map_npc_id: 2034 #
+    items:
+      - item_vnum: 13236 #
+        quantity: 1

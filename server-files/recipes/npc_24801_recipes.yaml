@@ -1,0 +1,29 @@
+recipes:
+- item_vnum: 415 # Ku'ru'kelron Boots
+  quantity: 1
+  producer_map_npc_id: 24801 # Tattoist
+  items:
+  - item_vnum: 322 # Shadow Shoes
+    quantity: 1
+  - item_vnum: 388 # Shining Wave Shoes
+    quantity: 1
+  - item_vnum: 2221 # Locomotive
+    quantity: 10
+- item_vnum: 901 # 
+  quantity: 1
+  producer_map_npc_id: 24801 # Tattoist
+  items:
+  - item_vnum: 9565 # 
+    quantity: 20
+- item_vnum: 709 # Fast Shoes
+  quantity: 1
+  producer_map_npc_id: 24801 # Tattoist
+  items:
+  - item_vnum: 62 # Adventurer's Shoes
+    quantity: 1
+  - item_vnum: 1033 # White Crystal Piece
+    quantity: 10
+  - item_vnum: 2207 # Golden Feather
+    quantity: 1
+  - item_vnum: 2052 # Purple Hair Dye
+    quantity: 3

@@ -1,0 +1,14 @@
+map_id: 283
+npcs:
+- map_npc_id: 556208
+  vnum: 1491
+  pos_x: 17
+  pos_y: 42
+  direction_facing: 2
+  can_move: true
+- map_npc_id: 556166
+  vnum: 683
+  pos_x: 19
+  pos_y: 42
+  direction_facing: 2
+  can_move: true

@@ -1,0 +1,33 @@
+# AW80飾
+recipes:
+  - item_vnum: 4658 # 
+    quantity: 1
+    producer_map_npc_id: 2032 #
+    items:
+      - item_vnum:  #
+        quantity: 1
+      - item_vnum: 2358 #
+        quantity: 1
+      - item_vnum: 2357 #
+        quantity: 1
+  - item_vnum: 4654 # 
+    quantity: 1
+    producer_map_npc_id: 2032 #
+    items:
+      - item_vnum:  #
+        quantity: 1
+      - item_vnum: 2358 #
+        quantity: 1
+      - item_vnum: 2357 #
+        quantity: 1
+  - item_vnum: 4648 # 
+    quantity: 1
+    producer_map_npc_id: 2032 #
+    items:
+      - item_vnum:  #
+        quantity: 1
+      - item_vnum: 2358 #
+        quantity: 1
+      - item_vnum: 2357 #
+        quantity: 1
+ 

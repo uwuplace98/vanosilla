@@ -1,0 +1,12 @@
+exp_event: False
+upgrade_eq_event: False
+gamble_eq_event: False
+upgrade_sp_event: False
+upgrade_perfection_event: False
+family_exp_event: False
+gold_event: False
+reputation_event: False
+drop_event: False
+rune_event: True
+tattoo_event: False
+bonus_raid_box_event: False

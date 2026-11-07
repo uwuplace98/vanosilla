@@ -1,0 +1,21 @@
+@page "/Coravel/login"
+@using WingsEmu.ClusterScheduler.Areas.Coravel.Pages
+@model LoginModel
+@{
+    ViewData["Title"] = "Login - Dashboard";
+}
+
+<h1>Login</h1>
+
+<form method="post" style="max-width: 400px; margin: 0 auto;">
+    @Html.AntiForgeryToken()
+    <div style="margin-bottom: 15px;">
+        <label for="username" style="display: block; margin-bottom: 5px;">Username:</label>
+        <input type="text" id="username" name="username" required style="width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ccc;" />
+    </div>
+    <div style="margin-bottom: 15px;">
+        <label for="password" style="display: block; margin-bottom: 5px;">Password:</label>
+        <input type="password" id="password" name="password" required style="width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ccc;" />
+    </div>
+    <button type="submit" style="background-color: #007bff; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Login</button>
+</form>

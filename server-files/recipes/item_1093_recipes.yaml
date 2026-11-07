@@ -1,0 +1,101 @@
+recipes:
+- item_vnum: 1807
+  quantity: 1
+  producer_item_vnum: 1093
+  items:
+  - item_vnum: 1012
+    quantity: 3
+  - item_vnum: 1028
+    quantity: 1
+  - item_vnum: 1093
+    quantity: 1
+- item_vnum: 1808
+  quantity: 1
+  producer_item_vnum: 1093
+  items:
+  - item_vnum: 1012
+    quantity: 5
+  - item_vnum: 1028
+    quantity: 2
+  - item_vnum: 1093
+    quantity: 1
+- item_vnum: 1809
+  quantity: 1
+  producer_item_vnum: 1093
+  items:
+  - item_vnum: 1012
+    quantity: 7
+  - item_vnum: 1028
+    quantity: 3
+  - item_vnum: 1093
+    quantity: 1
+- item_vnum: 1810
+  quantity: 1
+  producer_item_vnum: 1093
+  items:
+  - item_vnum: 1012
+    quantity: 9
+  - item_vnum: 1028
+    quantity: 4
+  - item_vnum: 1093
+    quantity: 1
+- item_vnum: 1811
+  quantity: 1
+  producer_item_vnum: 1093
+  items:
+  - item_vnum: 1012
+    quantity: 11
+  - item_vnum: 1029
+    quantity: 1
+  - item_vnum: 1093
+    quantity: 1
+- item_vnum: 1812
+  quantity: 1
+  producer_item_vnum: 1093
+  items:
+  - item_vnum: 1012
+    quantity: 13
+  - item_vnum: 1029
+    quantity: 1
+  - item_vnum: 1093
+    quantity: 1
+- item_vnum: 1813
+  quantity: 1
+  producer_item_vnum: 1093
+  items:
+  - item_vnum: 1012
+    quantity: 15
+  - item_vnum: 1029
+    quantity: 1
+  - item_vnum: 1093
+    quantity: 1
+- item_vnum: 1814
+  quantity: 1
+  producer_item_vnum: 1093
+  items:
+  - item_vnum: 1012
+    quantity: 17
+  - item_vnum: 1029
+    quantity: 2
+  - item_vnum: 1093
+    quantity: 1
+- item_vnum: 1815
+  quantity: 1
+  producer_item_vnum: 1093
+  items:
+  - item_vnum: 1012
+    quantity: 19
+  - item_vnum: 1029
+    quantity: 2
+  - item_vnum: 1093
+    quantity: 1
+- item_vnum: 1816
+  quantity: 1
+  producer_item_vnum: 1093
+  items:
+  - item_vnum: 1012
+    quantity: 21
+  - item_vnum: 1029
+    quantity: 3
+  - item_vnum: 1093
+    quantity: 1

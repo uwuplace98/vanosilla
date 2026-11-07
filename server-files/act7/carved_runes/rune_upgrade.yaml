@@ -1,0 +1,392 @@
+max_upgrade: 21
+rune_upgrade_item:
+  - upgrade: 1
+    success: 100
+    damage: 0
+    gold: 3000
+    items_weapon:
+      - vnum: 2416
+        quantity: 15
+      - vnum: 2411
+        quantity: 15
+    items_armor:
+      - vnum: 2630
+        quantity: 15
+      - vnum: 2660
+        quantity: 30
+  - upgrade: 2
+    success: 90
+    damage: 0
+    gold: 16000
+    items_weapon:
+      - vnum: 2416
+        quantity: 15
+      - vnum: 2411
+        quantity: 15
+    items_armor:
+      - vnum: 2630
+        quantity: 15
+      - vnum: 2660
+        quantity: 30
+  - upgrade: 3
+    success: 79
+    damage: 4
+    gold: 99000
+    items_weapon:
+      - vnum: 2416
+        quantity: 15
+      - vnum: 2411
+        quantity: 15
+      - vnum: 2430
+        quantity: 20
+      - vnum: 2475
+        quantity: 1
+    items_armor:
+      - vnum: 2630
+        quantity: 15
+      - vnum: 2660
+        quantity: 30
+      - vnum: 2631
+        quantity: 10
+      - vnum: 2627
+        quantity: 1
+      - vnum: 2626
+        quantity: 1
+      - vnum: 2628
+        quantity: 1
+      - vnum: 2629
+        quantity: 1
+  - upgrade: 4
+    success: 65
+    damage: 5
+    gold: 55000
+    items_weapon:
+      - vnum: 2416
+        quantity: 15
+      - vnum: 2411
+        quantity: 15
+    items_armor:
+      - vnum: 2630
+        quantity: 15
+      - vnum: 2660
+        quantity: 30
+  - upgrade: 5
+    success: 45
+    damage: 6
+    gold: 110000
+    items_weapon:
+      - vnum: 2416
+        quantity: 15
+      - vnum: 2411
+        quantity: 15
+    items_armor:
+      - vnum: 2630
+        quantity: 15
+      - vnum: 2660
+        quantity: 30
+  - upgrade: 6
+    success: 25
+    damage: 7
+    gold: 280000
+    items_weapon:
+      - vnum: 2416
+        quantity: 30
+      - vnum: 2411
+        quantity: 30
+      - vnum: 2430
+        quantity: 19
+      - vnum: 2475
+        quantity: 1
+    items_armor:
+      - vnum: 2630
+        quantity: 15
+      - vnum: 2660
+        quantity: 30
+      - vnum: 2631
+        quantity: 13
+      - vnum: 2627
+        quantity: 1
+      - vnum: 2628
+        quantity: 1
+  - upgrade: 7
+    success: 20
+    damage: 8
+    gold: 220000
+    items_weapon:
+      - vnum: 2416
+        quantity: 30
+      - vnum: 2411
+        quantity: 30
+    items_armor:
+      - vnum: 2630
+        quantity: 15
+      - vnum: 2660
+        quantity: 30
+  - upgrade: 8
+    success: 15
+    damage: 9
+    gold: 310000
+    items_weapon:
+      - vnum: 2416
+        quantity: 30
+      - vnum: 2411
+        quantity: 30
+    items_armor:
+      - vnum: 2630
+        quantity: 15
+      - vnum: 2660
+        quantity: 30
+  - upgrade: 9
+    success: 7
+    damage: 10
+    gold: 500000
+    items_weapon:
+      - vnum: 2416
+        quantity: 30
+      - vnum: 2411
+        quantity: 30
+      - vnum: 2430
+        quantity: 18
+      - vnum: 2475
+        quantity: 1
+      - vnum: 2413
+        quantity: 1
+    items_armor:
+      - vnum: 2630
+        quantity: 15
+      - vnum: 2660
+        quantity: 30
+      - vnum: 2631
+        quantity: 16
+      - vnum: 2626
+        quantity: 1
+      - vnum: 2661
+        quantity: 1
+  - upgrade: 10
+    success: 7
+    damage: 12
+    gold: 450000
+    items_weapon:
+      - vnum: 2416
+        quantity: 30
+      - vnum: 2411
+        quantity: 30
+    items_armor:
+      - vnum: 2630
+        quantity: 15
+      - vnum: 2660
+        quantity: 30
+  - upgrade: 11
+    success: 5
+    damage: 14
+    gold: 560000
+    items_weapon:
+      - vnum: 2416
+        quantity: 30
+      - vnum: 2411
+        quantity: 30
+    items_armor:
+      - vnum: 2630
+        quantity: 15
+      - vnum: 2660
+        quantity: 30
+  - upgrade: 12
+    success: 4
+    damage: 15
+    gold: 790000
+    items_weapon:
+      - vnum: 2416
+        quantity: 30
+      - vnum: 2411
+        quantity: 30
+      - vnum: 2430
+        quantity: 17
+      - vnum: 2413
+        quantity: 1
+      - vnum: 2462
+        quantity: 1
+    items_armor:
+      - vnum: 2630
+        quantity: 15
+      - vnum: 2660
+        quantity: 30
+      - vnum: 2631
+        quantity: 19
+      - vnum: 2629
+        quantity: 1
+      - vnum: 2661
+        quantity: 1
+  - upgrade: 13
+    success: 4
+    damage: 18
+    gold: 700000
+    items_weapon:
+      - vnum: 2416
+        quantity: 30
+      - vnum: 2411
+        quantity: 30
+    items_armor:
+      - vnum: 2630
+        quantity: 15
+      - vnum: 2660
+        quantity: 30
+  - upgrade: 14
+    success: 3
+    damage: 20
+    gold: 880000
+    items_weapon:
+      - vnum: 2416
+        quantity: 30
+      - vnum: 2411
+        quantity: 30
+    items_armor:
+      - vnum: 2630
+        quantity: 15
+      - vnum: 2660
+        quantity: 30
+  - upgrade: 15
+    success: 1
+    damage: 25
+    gold: 1100000
+    items_weapon:
+      - vnum: 2416
+        quantity: 30
+      - vnum: 2411
+        quantity: 30
+      - vnum: 2430
+        quantity: 16
+      - vnum: 2413
+        quantity: 1
+      - vnum: 2462
+        quantity: 2
+    items_armor:
+      - vnum: 2630
+        quantity: 15
+      - vnum: 2660
+        quantity: 30
+      - vnum: 2631
+        quantity: 22
+      - vnum: 2484
+        quantity: 1
+      - vnum: 2661
+        quantity: 1
+  - upgrade: 16
+    success: 2.5
+    damage: 21
+    gold: 1320000
+    items_weapon:
+      - vnum: 2416
+        quantity: 30
+      - vnum: 2411
+        quantity: 30
+      - vnum: 2483
+        quantity: 20
+    items_armor:
+      - vnum: 2630
+        quantity: 15
+      - vnum: 2660
+        quantity: 30
+  - upgrade: 17
+    success: 2
+    damage: 22
+    gold: 1584000
+    items_weapon:
+      - vnum: 2416
+        quantity: 30
+      - vnum: 2411
+        quantity: 30
+      - vnum: 2483
+        quantity: 20
+    items_armor:
+      - vnum: 2630
+        quantity: 15
+      - vnum: 2660
+        quantity: 30
+  - upgrade: 18
+    success: 0.7
+    damage: 25
+    gold: 1916000
+    items_weapon:
+      - vnum: 2416
+        quantity: 30
+      - vnum: 2411
+        quantity: 30
+      - vnum: 2430
+        quantity: 15
+      - vnum: 2483
+        quantity: 33
+      - vnum: 2484
+        quantity: 1
+      - vnum: 2482
+        quantity: 3
+    items_armor:
+      - vnum: 2630
+        quantity: 15
+      - vnum: 2660
+        quantity: 30
+      - vnum: 2631
+        quantity: 25
+      - vnum: 2484
+        quantity: 1
+      - vnum: 2661
+        quantity: 1
+  - upgrade: 19
+    success: 1.6
+    damage: 23
+    gold: 1742000
+    items_weapon:
+      - vnum: 2416
+        quantity: 30
+      - vnum: 2411
+        quantity: 30
+      - vnum: 2483
+        quantity: 26
+    items_armor:
+      - vnum: 2630
+        quantity: 15
+      - vnum: 2660
+        quantity: 30
+  - upgrade: 20
+    success: 1.2
+    damage: 24
+    gold: 1916000
+    items_weapon:
+      - vnum: 2416
+        quantity: 30
+      - vnum: 2411
+        quantity: 30
+      - vnum: 2483
+        quantity: 26
+    items_armor:
+      - vnum: 2630
+        quantity: 15
+      - vnum: 2660
+        quantity: 30
+  - upgrade: 21
+    success: 0.4
+    damage: 25
+    gold: 2108000
+    items_weapon:
+      - vnum: 2416
+        quantity: 30
+      - vnum: 2411
+        quantity: 30
+      - vnum: 2430
+        quantity: 15
+      - vnum: 2483
+        quantity: 40
+      - vnum: 2484
+        quantity: 1
+      - vnum: 2482
+        quantity: 6
+    items_armor:
+      - vnum: 2630
+        quantity: 15
+      - vnum: 2660
+        quantity: 30
+      - vnum: 2631
+        quantity: 28
+      - vnum: 2484
+        quantity: 1
+      - vnum: 2661
+        quantity: 1

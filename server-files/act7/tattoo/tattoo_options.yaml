@@ -1,0 +1,16 @@
+tattoos:
+  - item_vnum: 5790
+    cast_id: 40
+    tattoo_options: [671, 686, 687, 688, 689, 690, 691, 692]
+  - item_vnum: 5791
+    cast_id: 43
+    tattoo_options: [709, 710, 711, 712, 713, 714, 715, 716]
+  - item_vnum: 5792
+    cast_id: 41
+    tattoo_options: [693, 694, 695, 696, 697, 698, 699, 700]
+  - item_vnum: 5793
+    cast_id: 42
+    tattoo_options: [701, 702, 703, 704, 705, 706, 707, 708]
+  - item_vnum: 9764
+    cast_id: 44
+    tattoo_options: [755]

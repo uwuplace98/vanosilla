@@ -1,0 +1,111 @@
+recipes:
+- item_vnum: 508
+  quantity: 1
+  producer_item_vnum: 1047
+  items:
+  - item_vnum: 1027
+    quantity: 24
+  - item_vnum: 1032
+    quantity: 5
+  - item_vnum: 1047
+    quantity: 1
+- item_vnum: 509
+  quantity: 1
+  producer_item_vnum: 1047
+  items:
+  - item_vnum: 1027
+    quantity: 25
+  - item_vnum: 1031
+    quantity: 5
+  - item_vnum: 1047
+    quantity: 1
+- item_vnum: 510
+  quantity: 1
+  producer_item_vnum: 1047
+  items:
+  - item_vnum: 1027
+    quantity: 26
+  - item_vnum: 1031
+    quantity: 7
+  - item_vnum: 1047
+    quantity: 1
+- item_vnum: 514
+  quantity: 1
+  producer_item_vnum: 1047
+  items:
+  - item_vnum: 1027
+    quantity: 33
+  - item_vnum: 1033
+    quantity: 10
+  - item_vnum: 1047
+    quantity: 1
+- item_vnum: 516
+  quantity: 1
+  producer_item_vnum: 1047
+  items:
+  - item_vnum: 1027
+    quantity: 35
+  - item_vnum: 1032
+    quantity: 12
+  - item_vnum: 1047
+    quantity: 1
+- item_vnum: 517
+  quantity: 1
+  producer_item_vnum: 1047
+  items:
+  - item_vnum: 1027
+    quantity: 36
+  - item_vnum: 1034
+    quantity: 15
+  - item_vnum: 1047
+    quantity: 1
+- item_vnum: 522
+  quantity: 1
+  producer_item_vnum: 1047
+  items:
+  - item_vnum: 1027
+    quantity: 43
+  - item_vnum: 1033
+    quantity: 20
+  - item_vnum: 1047
+    quantity: 1
+- item_vnum: 523
+  quantity: 1
+  producer_item_vnum: 1047
+  items:
+  - item_vnum: 1027
+    quantity: 44
+  - item_vnum: 1031
+    quantity: 24
+  - item_vnum: 1047
+    quantity: 1
+- item_vnum: 525
+  quantity: 1
+  producer_item_vnum: 1047
+  items:
+  - item_vnum: 1027
+    quantity: 46
+  - item_vnum: 1034
+    quantity: 28
+  - item_vnum: 1047
+    quantity: 1
+- item_vnum: 531
+  quantity: 1
+  producer_item_vnum: 1047
+  items:
+  - item_vnum: 1027
+    quantity: 54
+  - item_vnum: 1032
+    quantity: 36
+  - item_vnum: 1047
+    quantity: 1
+- item_vnum: 534
+  quantity: 1
+  producer_item_vnum: 1047
+  items:
+  - item_vnum: 1027
+    quantity: 57
+  - item_vnum: 1033
+    quantity: 42
+  - item_vnum: 1047
+    quantity: 1

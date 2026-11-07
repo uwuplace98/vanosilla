@@ -1,0 +1,26 @@
+# Minigame Configuration
+# Used by Plugin.Minigames
+
+# Sheep Farm Minigame
+sheep_farm_map_id: 2009
+sheep_monster_vnum: 9
+sheep_morph_id: 1009
+sheep_game_duration_minutes: 5
+sheep_speed: 5
+
+# Meteorite Dodge Minigame
+meteorite_dodge_map_id: 2004
+circle_monster_vnum: 2018
+circle_effect_id: 4660
+meteorite_speed: 12
+meteorite_morph_id: 1156
+meteorite_rounds: 5
+circle_damage_delay_ms: 3000
+
+# Rewards
+gold_per_round: 10000
+survival_bonus_gold: 50000
+first_place_bonus: 100000
+second_place_bonus: 50000
+third_place_bonus: 25000
+gold_per_sheep: 100

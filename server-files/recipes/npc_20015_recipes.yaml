@@ -1,0 +1,78 @@
+# AW25
+recipes:
+  - item_vnum: 4958 # 
+    quantity: 1
+    producer_map_npc_id: 20015 #
+    items:
+      - item_vnum: 5947 #
+        quantity: 10
+
+  - item_vnum: 4960 # 
+    quantity: 1
+    producer_map_npc_id: 20015 #
+    items:
+      - item_vnum: 5947 #
+        quantity: 10
+
+  - item_vnum: 4959 # 
+    quantity: 1
+    producer_map_npc_id: 20015 #
+    items:
+      - item_vnum: 5947 #
+        quantity: 10
+
+  - item_vnum: 4955 # 
+    quantity: 1
+    producer_map_npc_id: 20015 #
+    items:
+      - item_vnum: 5947 #
+        quantity: 10
+
+  - item_vnum: 4957 # 
+    quantity: 1
+    producer_map_npc_id: 20015 #
+    items:
+      - item_vnum: 5947 #
+        quantity: 10
+
+  - item_vnum: 4956 # 
+    quantity: 1
+    producer_map_npc_id: 20015 #
+    items:
+      - item_vnum: 5947 #
+        quantity: 10
+
+  - item_vnum: 4767 # 
+    quantity: 1
+    producer_map_npc_id: 20015 #
+    items:
+      - item_vnum: 5947 #
+        quantity: 10
+
+  - item_vnum: 4949 # 
+    quantity: 1
+    producer_map_npc_id: 20015 #
+    items:
+      - item_vnum: 5947 #
+        quantity: 10
+
+  - item_vnum: 4951 # 
+    quantity: 1
+    producer_map_npc_id: 20015 #
+    items:
+      - item_vnum: 5947 #
+        quantity: 10
+
+  - item_vnum: 4950 # 
+    quantity: 1
+    producer_map_npc_id: 20015 #
+    items:
+      - item_vnum: 5947 #
+        quantity: 10
+
+  - item_vnum: 4839 # 
+    quantity: 1
+    producer_map_npc_id: 20015 #
+    items:
+      - item_vnum: 5947 #
+        quantity: 10

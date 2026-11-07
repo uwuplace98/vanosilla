@@ -1,0 +1,121 @@
+recipes:
+- item_vnum: 2035
+  quantity: 1
+  producer_item_vnum: 1073
+  items:
+  - item_vnum: 1014
+    quantity: 5
+  - item_vnum: 1073
+    quantity: 1
+  - item_vnum: 2034
+    quantity: 5
+- item_vnum: 2036
+  quantity: 1
+  producer_item_vnum: 1073
+  items:
+  - item_vnum: 1014
+    quantity: 10
+  - item_vnum: 1073
+    quantity: 1
+  - item_vnum: 2035
+    quantity: 5
+- item_vnum: 2037
+  quantity: 1
+  producer_item_vnum: 1073
+  items:
+  - item_vnum: 1014
+    quantity: 20
+  - item_vnum: 1073
+    quantity: 1
+  - item_vnum: 2036
+    quantity: 5
+- item_vnum: 2039
+  quantity: 1
+  producer_item_vnum: 1073
+  items:
+  - item_vnum: 1014
+    quantity: 5
+  - item_vnum: 1073
+    quantity: 1
+  - item_vnum: 2038
+    quantity: 5
+- item_vnum: 2040
+  quantity: 1
+  producer_item_vnum: 1073
+  items:
+  - item_vnum: 1014
+    quantity: 10
+  - item_vnum: 1073
+    quantity: 1
+  - item_vnum: 2039
+    quantity: 5
+- item_vnum: 2041
+  quantity: 1
+  producer_item_vnum: 1073
+  items:
+  - item_vnum: 1014
+    quantity: 20
+  - item_vnum: 1073
+    quantity: 1
+  - item_vnum: 2040
+    quantity: 5
+- item_vnum: 2043
+  quantity: 1
+  producer_item_vnum: 1073
+  items:
+  - item_vnum: 1014
+    quantity: 5
+  - item_vnum: 1073
+    quantity: 1
+  - item_vnum: 2042
+    quantity: 5
+- item_vnum: 2044
+  quantity: 1
+  producer_item_vnum: 1073
+  items:
+  - item_vnum: 1014
+    quantity: 10
+  - item_vnum: 1073
+    quantity: 1
+  - item_vnum: 2043
+    quantity: 5
+- item_vnum: 2045
+  quantity: 1
+  producer_item_vnum: 1073
+  items:
+  - item_vnum: 1014
+    quantity: 20
+  - item_vnum: 1073
+    quantity: 1
+  - item_vnum: 2044
+    quantity: 5
+- item_vnum: 2047
+  quantity: 1
+  producer_item_vnum: 1073
+  items:
+  - item_vnum: 1014
+    quantity: 5
+  - item_vnum: 1073
+    quantity: 1
+  - item_vnum: 2046
+    quantity: 5
+- item_vnum: 2048
+  quantity: 1
+  producer_item_vnum: 1073
+  items:
+  - item_vnum: 1014
+    quantity: 10
+  - item_vnum: 1073
+    quantity: 1
+  - item_vnum: 2047
+    quantity: 5
+- item_vnum: 2049
+  quantity: 1
+  producer_item_vnum: 1073
+  items:
+  - item_vnum: 1014
+    quantity: 20
+  - item_vnum: 1073
+    quantity: 1
+  - item_vnum: 2048
+    quantity: 5

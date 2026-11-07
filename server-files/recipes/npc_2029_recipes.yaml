@@ -1,0 +1,42 @@
+# AW80右手
+recipes:
+- item_vnum: 4618 # 刀
+  quantity: 1
+  producer_map_npc_id: 2029 #武器
+  items:
+  - item_vnum: 4617  #AW65
+    quantity: 1
+  - item_vnum: 2646 #
+    quantity: 50
+  - item_vnum: 2647 #
+    quantity: 50
+- item_vnum: 4620 # 弓
+  quantity: 1
+  producer_map_npc_id: 2029 #武器
+  items:
+    - item_vnum: 4619 #AW65
+      quantity: 1
+    - item_vnum: 2646 #
+      quantity: 50
+    - item_vnum: 2647 #
+      quantity: 50
+- item_vnum: 4622 # 杖
+  quantity: 1
+  producer_map_npc_id: 2029 #武器
+  items:
+    - item_vnum: 4621 #AW65
+      quantity: 1
+    - item_vnum: 2646 #
+      quantity: 50
+    - item_vnum: 2647 #
+      quantity: 50
+- item_vnum: 4624 # 拳
+  quantity: 1
+  producer_map_npc_id: 2029 #武器
+  items:
+    - item_vnum: 4623 #AW65
+      quantity: 1
+    - item_vnum: 2646 #
+      quantity: 50
+    - item_vnum: 2647 #
+      quantity: 50

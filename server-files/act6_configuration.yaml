@@ -1,0 +1,4 @@
+maximum_faction_points: 100
+faction_points_per_pve_kill: 1
+instance_duration: 01:00:00
+pvp_instance_duration: 00:15:00

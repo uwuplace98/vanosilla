@@ -1,0 +1,19 @@
+item_vnum: 13236
+show_raidbox_modal_on_open: true
+items:
+  - item_vnum: 2514     # 
+    quantity:  100
+  - item_vnum: 2515     # 
+    quantity:  100
+  - item_vnum: 2516     # 
+    quantity:  100
+  - item_vnum: 2517     # 
+    quantity:  100
+  - item_vnum: 2518     # 
+    quantity:  100
+  - item_vnum: 2519    # 
+    quantity:  100
+  - item_vnum: 2520    # 
+    quantity:  100
+  - item_vnum: 2521    # 
+    quantity:  100

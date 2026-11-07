@@ -1,0 +1,199 @@
+map_id: 2004    #default IC map
+required_damages: 25000
+return_portal_x: 47
+return_portal_y: 33
+requirements:
+  level:
+    minimum: 70
+    maximum: 79
+# heroic_level:
+#   minimum: 0
+#   maximum: 0
+  players:
+    minimum: 1
+    maximum: 50
+reward:
+  gold_multiplier: 18000 # 2,000 ~ 98,000
+  reputation_multiplier: 10
+  sp_points_multiplier: 10
+  family_experience: 100
+  dignity: 20
+closing_time: 00:15:00
+pre_wave_long_warning_time: 00:00:40    # "Monsters will show up in 40s"
+pre_wave_soon_warning_time: 00:00:10    # "Monsters are coming..."
+time_left_warnings:
+- 00:05:00    #10min left
+- 00:10:00    #5min left
+- 00:13:00    #2min left
+- 00:14:00    #1min left
+- 00:14:30    #30s left
+- 00:14:50    #10s left
+waves:
+#
+#
+# ===============================================================
+# Wave 1 - The Fearsome Fire Devil (Part I)!
+#
+- time_start: 00:00:30
+  time_end: 00:02:45
+  title_key: IC_70_79_W1_TITLE
+
+  monsters:
+  - monster_vnum: 402   # Beast
+    amount: 15
+  - monster_vnum: 253    # Ugly Spearman
+    amount: 15
+  - monster_vnum: 237    # Strong Skeleton Warrior
+    amount: 15
+  - monster_vnum: 216    # Strong Spider
+    amount: 15
+  - monster_vnum: 205   # Strong Pig
+    amount: 16
+  drops:
+  - item_vnum: 1046     # Gold
+    bunch_count: 15
+    amount_per_bunch: 42500
+  - item_vnum: 1010     # Large Recovery Potion
+    bunch_count: 8
+    amount_per_bunch: 10
+  - item_vnum: 1246     # Attack Potion
+    bunch_count: 8
+    amount_per_bunch: 2
+  - item_vnum: 1012     # Seed of Power
+    bunch_count: 10
+    amount_per_bunch: 20
+#
+#
+# ===============================================================
+# Wave 2 - The Fearsome Fire Devil (Part II)!
+#
+- time_start: 00:03:15
+  time_end: 00:05:30
+  title_key: IC_70_79_W2_TITLE
+
+  monsters:
+  - monster_vnum: 402   # Beast
+    amount: 12
+  - monster_vnum: 243    # Strong Lava Golem
+    amount: 12
+  - monster_vnum: 228    # Angry Wiggler
+    amount: 12
+  - monster_vnum: 225    # Large Wasp
+    amount: 12
+  - monster_vnum: 205   # Strong Pig
+    amount: 13
+  drops:
+  - item_vnum: 1046     # Gold
+    bunch_count: 15
+    amount_per_bunch: 45000
+  - item_vnum: 1010     # Large Recovery Potion
+    bunch_count: 10
+    amount_per_bunch: 10
+  - item_vnum: 1247     # Defence Potion
+    bunch_count: 10
+    amount_per_bunch: 2
+  - item_vnum: 1012     # Seed of Power
+    bunch_count: 10
+    amount_per_bunch: 20
+#
+#
+# ===============================================================
+# Wave 3 - The Fearsome Fire Devil (Part III)!
+#
+- time_start: 00:06:00
+  time_end: 00:08:15
+  title_key: IC_70_79_W3_TITLE
+
+  monsters:
+  - monster_vnum: 255     # Furious Skull
+    amount: 15
+  - monster_vnum: 254    # Ghastly Spearman
+    amount: 15
+  - monster_vnum: 251    # Weak Deathwitch
+    amount: 15
+  - monster_vnum: 174    # Weak UFO Boing
+    amount: 15
+  - monster_vnum: 172   # Weak Spike Boing
+    amount: 16
+  drops:
+  - item_vnum: 1046     # Gold
+    bunch_count: 15
+    amount_per_bunch: 47500
+  - item_vnum: 1010     # Large Recovery Potion
+    bunch_count: 10
+    amount_per_bunch: 20
+  - item_vnum: 1246     # Attack Potion
+    bunch_count: 10
+    amount_per_bunch: 2
+  - item_vnum: 1247     # Defence Potion
+    bunch_count: 10
+    amount_per_bunch: 2
+  - item_vnum: 1012     # Seed of Power
+    bunch_count: 10
+    amount_per_bunch: 25
+#
+#
+# ===============================================================
+# Wave 4 - The Fearsome Fire Devil (Part IV)!
+#
+- time_start: 00:08:45
+  time_end: 00:11:00
+  title_key: IC_70_79_W4_TITLE
+
+  monsters:
+  - monster_vnum: 407     # Devil Lady
+    amount: 15
+  - monster_vnum: 272    # Skull Archer
+    amount: 15
+  - monster_vnum: 261   # Angry Lava Golem
+    amount: 15
+  - monster_vnum: 257    # Angry Skull
+    amount: 15
+  - monster_vnum: 256   # Cursed Skull
+    amount: 15
+  drops:
+  - item_vnum: 1046     # Gold
+    bunch_count: 15
+    amount_per_bunch: 50000
+  - item_vnum: 1011     # Huge Recovery Potion
+    bunch_count: 10
+    amount_per_bunch: 20
+  - item_vnum: 1029     # Half Moon Crystal
+    bunch_count: 10
+    amount_per_bunch: 10
+  - item_vnum: 1246     # Attack Potion
+    bunch_count: 10
+    amount_per_bunch: 2
+  - item_vnum: 1247     # Defence Potion
+    bunch_count: 10
+    amount_per_bunch: 2
+  - item_vnum: 1248     # Energy Potion
+    bunch_count: 10
+    amount_per_bunch: 2
+  - item_vnum: 1012     # Seed of Power
+    bunch_count: 10
+    amount_per_bunch: 25
+#
+#
+# ===============================================================
+# Wave 5 - The Fearsome Fire Devil [BOSS] (End Part)!
+#
+- time_start: 00:11:30
+  time_end: 00:15:00
+  title_key: IC_70_79_W5_TITLE
+
+  monsters:
+  - monster_vnum: 444   # Bone Drake
+    amount: 13
+  - monster_vnum: 439   # Revenant Skeleton Warrior
+    amount: 13
+  - monster_vnum: 275   # Cursed Skull Warrior
+    amount: 13
+  - monster_vnum: 274   # Skull Warrior
+    amount: 13
+  - monster_vnum: 273    # Cursed Skull Archer
+    amount: 13
+  - monster_vnum: 163    # Soldier Spider
+    amount: 14
+  - monster_vnum: 748 # (BOSS) Weak Fire Devil
+    amount: 1

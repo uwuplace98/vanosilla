@@ -1,0 +1,111 @@
+# Frequency Type :
+# Daily = 0
+# Weekly = 1
+# Seasonal = 2
+
+# start: "month/day/year hours:minute:sec AM/PM"
+
+# rewards : 
+# bp 5/10/20/30/40/50/60/70/80/90/100
+# jewels 5/10/12/20/30/40/50/75/100
+
+quests:
+  ##########[DAILY]##########
+  - id: 1 ## Matar Bichos con x niveles de rango
+    mission_type: 4
+    frequency_type: 0
+    first_data: 0
+    max_objective_value: 500
+    reward_amount: 10
+    start: "10/11/2025 0:00:00 PM"
+  - id: 2 ## Estar Conectado
+    mission_type: 20
+    frequency_type: 0
+    first_data: 0
+    max_objective_value: 60
+    reward_amount: 10
+    start: "10/11/2025 0:00:00 PM"
+  - id: 3 # Hacer CI
+    mission_type: 6
+    frequency_type: 0
+    first_data: 0
+    max_objective_value: 3
+    reward_amount: 10
+    start: "10/11/2025 0:00:00 PM"
+  - id: 4 # Hacer Rainbow
+    mission_type: 5
+    frequency_type: 0
+    first_data: 0
+    max_objective_value: 3
+    reward_amount: 10
+    start: "10/11/2025 0:00:00 PM"
+  - id: 5 # Gastar Oro Npc
+    mission_type: 24
+    frequency_type: 0
+    first_data: 0
+    max_objective_value: 10000000
+    reward_amount: 10
+    start: "10/11/2025 0:00:00 PM"
+  - id: 6 ## Matar 800 magmaros (SEMANAL)
+    mission_type: 30
+    frequency_type: 1
+    first_data: 1042
+    max_objective_value: 800
+    reward_amount: 30
+    start: "10/11/2025 0:00:00 PM"    
+  - id: 7 ## Hacer ZENAS (SEMANAL)
+    mission_type: 29
+    frequency_type: 1
+    first_data: 23
+    max_objective_value: 50
+    reward_amount: 30
+    start: "10/11/2025 0:00:00 PM"      
+  - id: 8 ## Hacer ERENIA (SEMANAL)
+    mission_type: 29
+    frequency_type: 1
+    first_data: 24
+    max_objective_value: 50
+    reward_amount: 30
+    start: "10/11/2025 0:00:00 PM"   
+  - id: 9 ## Hacer FERNON (SEMANAL)
+    mission_type: 29
+    frequency_type: 1
+    first_data: 25
+    max_objective_value: 50
+    reward_amount: 30
+    start: "10/11/2025 0:00:00 PM"    
+  - id: 10 ## MATAR GENTE CALIGOR (SEMANAL)
+    mission_type: 18
+    frequency_type: 1
+    first_data: 0
+    max_objective_value: 25
+    reward_amount: 30
+    start: "10/11/2025 0:00:00 PM"          
+  - id: 11 ## MATAR GENTE CALIGOR (mensual)
+    mission_type: 18
+    frequency_type: 1
+    first_data: 0
+    max_objective_value: 100
+    reward_amount: 30
+    start: "10/11/2025 0:00:00 PM"      
+  - id: 12 ## COMPLETAR CALIGOR (SEMANAL)
+    mission_type: 18
+    frequency_type: 1
+    first_data: 0
+    max_objective_value: 10
+    reward_amount: 30
+    start: "10/11/2025 0:00:00 PM" 
+  - id: 13 # Hacer CI (semanal)
+    mission_type: 6
+    frequency_type: 1
+    first_data: 0
+    max_objective_value: 25
+    reward_amount: 30
+    start: "10/11/2025 0:00:00 PM"
+  - id: 14 ## Matar 800 AC6.2 (SEMANAL)
+    mission_type: 30
+    frequency_type: 1
+    first_data: 2559
+    max_objective_value: 800
+    reward_amount: 30
+    start: "10/11/2025 0:00:00 PM"                         

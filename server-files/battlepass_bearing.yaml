@@ -1,0 +1,211 @@
+bearings:
+  - id: 1
+    minimum_battlepass_point: 0
+    maximum_battlepass_point: 50
+    reward_vnum: 1012
+    reward_amount: 10
+    premium_reward_vnum: 2282
+    premium_reward_amount: 5
+  - id: 2
+    minimum_battlepass_point: 51
+    maximum_battlepass_point: 100
+    reward_vnum: 1012
+    reward_amount: 15
+    premium_reward_vnum: 2282
+    premium_reward_amount: 10
+  - id: 3
+    minimum_battlepass_point: 101
+    maximum_battlepass_point: 150
+    reward_vnum: 1012
+    reward_amount: 20
+    premium_reward_vnum: 2283
+    premium_reward_amount: 5
+  - id: 4
+    minimum_battlepass_point: 151
+    maximum_battlepass_point: 200
+    reward_vnum: 1013
+    reward_amount: 10
+    premium_reward_vnum: 2283
+    premium_reward_amount: 10
+  - id: 5
+    minimum_battlepass_point: 201
+    maximum_battlepass_point: 250
+    reward_vnum: 1013
+    reward_amount: 15
+    premium_reward_vnum: 2284
+    premium_reward_amount: 5
+  - id: 6
+    minimum_battlepass_point: 251
+    maximum_battlepass_point: 300
+    reward_vnum: 1013
+    reward_amount: 20
+    premium_reward_vnum: 2284
+    premium_reward_amount: 10
+  - id: 7
+    minimum_battlepass_point: 301
+    maximum_battlepass_point: 350
+    reward_vnum: 1014
+    reward_amount: 10
+    premium_reward_vnum: 2285
+    premium_reward_amount: 5
+  - id: 8
+    minimum_battlepass_point: 351
+    maximum_battlepass_point: 400
+    reward_vnum: 1014
+    reward_amount: 15
+    premium_reward_vnum: 2285
+    premium_reward_amount: 10
+  - id: 9
+    minimum_battlepass_point: 401
+    maximum_battlepass_point: 450
+    reward_vnum: 1014
+    reward_amount: 20
+    premium_reward_vnum: 2286
+    premium_reward_amount: 5
+  - id: 10
+    minimum_battlepass_point: 451
+    maximum_battlepass_point: 500
+    reward_vnum: 1015
+    reward_amount: 10
+    premium_reward_vnum: 2286
+    premium_reward_amount: 10
+  - id: 11
+    minimum_battlepass_point: 501
+    maximum_battlepass_point: 550
+    reward_vnum: 1015
+    reward_amount: 15
+    premium_reward_vnum: 2287
+    premium_reward_amount: 5
+  - id: 12
+    minimum_battlepass_point: 551
+    maximum_battlepass_point: 600
+    reward_vnum: 1015
+    reward_amount: 20
+    premium_reward_vnum: 2287
+    premium_reward_amount: 10
+  - id: 13
+    minimum_battlepass_point: 601
+    maximum_battlepass_point: 650
+    reward_vnum: 1016
+    reward_amount: 10
+    premium_reward_vnum: 2288
+    premium_reward_amount: 5
+  - id: 14
+    minimum_battlepass_point: 651
+    maximum_battlepass_point: 700
+    reward_vnum: 1016
+    reward_amount: 15
+    premium_reward_vnum: 2288
+    premium_reward_amount: 10
+  - id: 15
+    minimum_battlepass_point: 701
+    maximum_battlepass_point: 750
+    reward_vnum: 1016
+    reward_amount: 20
+    premium_reward_vnum: 2289
+    premium_reward_amount: 5
+  - id: 16
+    minimum_battlepass_point: 751
+    maximum_battlepass_point: 800
+    reward_vnum: 1017
+    reward_amount: 10
+    premium_reward_vnum: 2289
+    premium_reward_amount: 10
+  - id: 17
+    minimum_battlepass_point: 801
+    maximum_battlepass_point: 850
+    reward_vnum: 1017
+    reward_amount: 15
+    premium_reward_vnum: 2290
+    premium_reward_amount: 5
+  - id: 18
+    minimum_battlepass_point: 851
+    maximum_battlepass_point: 900
+    reward_vnum: 1017
+    reward_amount: 20
+    premium_reward_vnum: 2290
+    premium_reward_amount: 10
+  - id: 19
+    minimum_battlepass_point: 901
+    maximum_battlepass_point: 950
+    reward_vnum: 1018
+    reward_amount: 10
+    premium_reward_vnum: 2291
+    premium_reward_amount: 5
+  - id: 20
+    minimum_battlepass_point: 951
+    maximum_battlepass_point: 1000
+    reward_vnum: 1018
+    reward_amount: 15
+    premium_reward_vnum: 2291
+    premium_reward_amount: 10
+  - id: 21
+    minimum_battlepass_point: 1001
+    maximum_battlepass_point: 1050
+    reward_vnum: 1018
+    reward_amount: 20
+    premium_reward_vnum: 2292
+    premium_reward_amount: 5
+  - id: 22
+    minimum_battlepass_point: 1051
+    maximum_battlepass_point: 1100
+    reward_vnum: 1019
+    reward_amount: 10
+    premium_reward_vnum: 2292
+    premium_reward_amount: 10
+  - id: 23
+    minimum_battlepass_point: 1101
+    maximum_battlepass_point: 1150
+    reward_vnum: 1019
+    reward_amount: 15
+    premium_reward_vnum: 2293
+    premium_reward_amount: 5
+  - id: 24
+    minimum_battlepass_point: 1151
+    maximum_battlepass_point: 1200
+    reward_vnum: 1019
+    reward_amount: 20
+    premium_reward_vnum: 2293
+    premium_reward_amount: 10
+  - id: 25
+    minimum_battlepass_point: 1201
+    maximum_battlepass_point: 1250
+    reward_vnum: 1020
+    reward_amount: 10
+    premium_reward_vnum: 2294
+    premium_reward_amount: 5
+  - id: 26
+    minimum_battlepass_point: 1251
+    maximum_battlepass_point: 1300
+    reward_vnum: 1020
+    reward_amount: 15
+    premium_reward_vnum: 2294
+    premium_reward_amount: 10
+  - id: 27
+    minimum_battlepass_point: 1301
+    maximum_battlepass_point: 1350
+    reward_vnum: 1020
+    reward_amount: 20
+    premium_reward_vnum: 2295
+    premium_reward_amount: 5
+  - id: 28
+    minimum_battlepass_point: 1351
+    maximum_battlepass_point: 1400
+    reward_vnum: 1021
+    reward_amount: 10
+    premium_reward_vnum: 2295
+    premium_reward_amount: 10
+  - id: 29
+    minimum_battlepass_point: 1401
+    maximum_battlepass_point: 1450
+    reward_vnum: 1021
+    reward_amount: 15
+    premium_reward_vnum: 2296
+    premium_reward_amount: 5
+  - id: 30
+    minimum_battlepass_point: 1451
+    maximum_battlepass_point: 1500
+    reward_vnum: 1021
+    reward_amount: 20
+    premium_reward_vnum: 2296
+    premium_reward_amount: 10

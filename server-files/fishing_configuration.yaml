@@ -1,0 +1,25 @@
+Maps:
+  - MapVnum: 1
+    RegionId: 0
+  - MapVnum: 20
+    RegionId: 1
+
+Pools:
+  - RegionId: 0
+    SubId: 0
+    X: 10
+    Y: 146
+    Direction: 3
+  - RegionId: 0
+    SubId: 1
+    X: 20
+    Y: 150
+    Direction: 2
+
+Drops:
+  - Id: 1
+    Vnum: 5000
+    Chance: 100
+  - Id: 2
+    Vnum: 5001
+    Chance: 50

@@ -1,0 +1,131 @@
+recipes:
+- item_vnum: 400
+  quantity: 1
+  producer_item_vnum: 1313
+  items:
+  - item_vnum: 263
+    quantity: 1
+  - item_vnum: 1313
+    quantity: 1
+  - item_vnum: 2036
+    quantity: 60
+  - item_vnum: 2218
+    quantity: 40
+  - item_vnum: 2250
+    quantity: 10
+- item_vnum: 403
+  quantity: 1
+  producer_item_vnum: 1313
+  items:
+  - item_vnum: 266
+    quantity: 1
+  - item_vnum: 1313
+    quantity: 1
+  - item_vnum: 2040
+    quantity: 60
+  - item_vnum: 2217
+    quantity: 40
+  - item_vnum: 2249
+    quantity: 10
+- item_vnum: 406
+  quantity: 1
+  producer_item_vnum: 1313
+  items:
+  - item_vnum: 269
+    quantity: 1
+  - item_vnum: 1313
+    quantity: 1
+  - item_vnum: 2048
+    quantity: 60
+  - item_vnum: 2224
+    quantity: 40
+  - item_vnum: 2251
+    quantity: 10
+- item_vnum: 402
+  quantity: 1
+  producer_item_vnum: 1313
+  items:
+  - item_vnum: 292
+    quantity: 1
+  - item_vnum: 1313
+    quantity: 1
+  - item_vnum: 2040
+    quantity: 60
+  - item_vnum: 2217
+    quantity: 50
+  - item_vnum: 2249
+    quantity: 5
+  - item_vnum: 2263
+    quantity: 30
+  - item_vnum: 2279
+    quantity: 3
+- item_vnum: 405
+  quantity: 1
+  producer_item_vnum: 1313
+  items:
+  - item_vnum: 290
+    quantity: 1
+  - item_vnum: 1313
+    quantity: 1
+  - item_vnum: 2044
+    quantity: 60
+  - item_vnum: 2224
+    quantity: 50
+  - item_vnum: 2251
+    quantity: 5
+  - item_vnum: 2262
+    quantity: 3
+  - item_vnum: 2275
+    quantity: 30
+- item_vnum: 408
+  quantity: 1
+  producer_item_vnum: 1313
+  items:
+  - item_vnum: 294
+    quantity: 1
+  - item_vnum: 1313
+    quantity: 1
+  - item_vnum: 2036
+    quantity: 60
+  - item_vnum: 2218
+    quantity: 50
+  - item_vnum: 2222
+    quantity: 3
+  - item_vnum: 2250
+    quantity: 5
+  - item_vnum: 2276
+    quantity: 30
+- item_vnum: 4722
+  quantity: 1
+  producer_item_vnum: 1313
+  items:
+  - item_vnum: 4720
+    quantity: 1
+  - item_vnum: 1313
+    quantity: 1
+  - item_vnum: 2036
+    quantity: 65
+  - item_vnum: 2218
+    quantity: 50
+  - item_vnum: 2250
+    quantity: 5
+  - item_vnum: 2249
+    quantity: 5
+- item_vnum: 4760
+  quantity: 1
+  producer_item_vnum: 1313
+  items:
+  - item_vnum: 4759
+    quantity: 1
+  - item_vnum: 1313
+    quantity: 1
+  - item_vnum: 2040
+    quantity: 60
+  - item_vnum: 2217
+    quantity: 50
+  - item_vnum: 2249
+    quantity: 7
+  - item_vnum: 2262
+    quantity: 5
+  - item_vnum: 2275
+    quantity: 40

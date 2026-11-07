@@ -1,0 +1,29 @@
+quicklist:
+- morph: 0
+  inv_slot_or_skill_slot_or_skill_vnum: 1
+  quicklist_tab: 0
+  quicklist_slot: 0
+  inventory_type_or_skill_tab: 1
+  type: SKILLS
+  skill_vnum: 
+- morph: 0
+  inv_slot_or_skill_slot_or_skill_vnum: 0
+  quicklist_tab: 0
+  quicklist_slot: 1
+  inventory_type_or_skill_tab: 2
+  type: ITEM
+  skill_vnum: 
+- morph: 0
+  inv_slot_or_skill_slot_or_skill_vnum: 16
+  quicklist_tab: 0
+  quicklist_slot: 8
+  inventory_type_or_skill_tab: 1
+  type: SKILLS
+  skill_vnum: 
+- morph: 0
+  inv_slot_or_skill_slot_or_skill_vnum: 1
+  quicklist_tab: 0
+  quicklist_slot: 9
+  inventory_type_or_skill_tab: 3
+  type: SKILLS
+  skill_vnum: 

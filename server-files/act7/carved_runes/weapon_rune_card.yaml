@@ -1,0 +1,168 @@
+cards:
+  - type: 3
+    sub_type: 11
+    first_data: [ 20, 40, 80, 150, 200, 250 ]
+    second_data: [ 0, 0, 0, 0, 0, 0 ]
+    first_data_scaling_type: NORMAL_VALUE
+    is_rune_power: false
+    cast_type: 0
+  - type: 4
+    sub_type: 11
+    first_data: [ 20, 40, 70, 110, 150, 1]
+    second_data: [ 0, 0, 0, 0, 0, 0 ]
+    first_data_scaling_type: NORMAL_VALUE
+    is_rune_power: false
+  - type: 4
+    sub_type: 51
+    first_data: [ 3, 6, 9, 12, 16, 20 ]
+    second_data: [ 0, 0, 0, 0, 0, 0 ]
+    first_data_scaling_type: NORMAL_VALUE
+    is_rune_power: false
+    cast_type: 0
+  - type: 5
+    sub_type: 11
+    first_data: [ 1, 2, 4, 6, 8, 10 ]
+    second_data: [ 0, 0, 0, 0, 0, 0 ]
+    first_data_scaling_type: NORMAL_VALUE
+    is_rune_power: false
+    cast_type: 0
+  - type: 5
+    sub_type: 21
+    first_data: [ 3, 6, 9, 12, 18, 25 ]
+    second_data: [ 0, 0, 0, 0, 0, 0 ]
+    first_data_scaling_type: NORMAL_VALUE
+    is_rune_power: false
+    cast_type: 0
+  - type: 10
+    sub_type: 51
+    first_data: [ 3, 6, 9, 12, 16, 20 ]
+    second_data: [ 0, 0, 0, 0, 0, 0 ]
+    first_data_scaling_type: NORMAL_VALUE
+    is_rune_power: false
+    cast_type: 0
+  - type: 50
+    sub_type: 41
+    first_data: [ 3, 6, 9, 12, 16, 20 ]
+    second_data: [ 0, 0, 0, 0, 0, 0 ]
+    first_data_scaling_type: NORMAL_VALUE
+    is_rune_power: false
+    cast_type: 0
+  - type: 96
+    sub_type: 11
+    first_data: [ 3, 6, 9, 12, 16, 20 ]
+    second_data: [ 0, 0, 0, 0, 0, 0 ]
+    first_data_scaling_type: NORMAL_VALUE
+    is_rune_power: false
+    cast_type: 0
+  - type: 102
+    sub_type: 11
+    first_data: [ 1, 2, 3, 4, 5, 6 ]
+    second_data: [ 0, 0, 0, 0, 0, 0 ]
+    first_data_scaling_type: NORMAL_VALUE
+    is_rune_power: false
+    cast_type: 0
+  - type: 102
+    sub_type: 31
+    first_data: [ 1, 2, 3, 4, 5, 6 ]
+    second_data: [ 0, 0, 0, 0, 0, 0 ]
+    first_data_scaling_type: NORMAL_VALUE
+    is_rune_power: false
+    cast_type: 0
+  - type: 102
+    sub_type: 51
+    first_data: [ 1, 2, 4, 7, 10, 13 ]
+    second_data: [ 0, 0, 0, 0, 0, 0 ]
+    first_data_scaling_type: NORMAL_VALUE
+    is_rune_power: false
+    cast_type: 0
+  - type: 103
+    sub_type: 51
+    first_data: [ 1, 2, 4, 7, 10, 13 ]
+    second_data: [ 0, 0, 0, 0, 0, 0 ]
+    first_data_scaling_type: NORMAL_VALUE
+    is_rune_power: false
+    cast_type: 0
+  - type: 103
+    sub_type: 11
+    first_data: [ 1, 2, 4, 7, 10, 13 ]
+    second_data: [ 0, 0, 0, 0, 0, 0 ]
+    first_data_scaling_type: NORMAL_VALUE
+    is_rune_power: false
+    cast_type: 0
+  - type: 104
+    sub_type: 41
+    first_data: [ 3, 6, 9, 12, 18, 25 ]
+    second_data: [ 0, 0, 0, 0, 0, 0 ]
+    first_data_scaling_type: NORMAL_VALUE
+    is_rune_power: false
+    cast_type: 0
+  - type: 105
+    sub_type: 11
+    first_data: [ 1, 2, 3, 4, 5, 6 ]
+    second_data: [ 1900, 1901, 1902, 1903, 1904, 1950 ]
+    first_data_scaling_type: NORMAL_VALUE
+    is_rune_power: true
+    cast_type: 1
+  - type: 105
+    sub_type: 21
+    first_data: [ 1, 2, 3, 4, 5, 6 ]
+    second_data: [ 1905, 1906, 1907, 1908, 1909, 1951 ]
+    first_data_scaling_type: NORMAL_VALUE
+    is_rune_power: true
+    cast_type: 0
+  - type: 105
+    sub_type: 31
+    first_data: [ 1, 2, 3, 4, 5, 6 ]
+    second_data: [ 1910, 1911, 1912, 1913, 1914, 1952 ]
+    first_data_scaling_type: NORMAL_VALUE
+    is_rune_power: true
+    cast_type: 1
+  - type: 105
+    sub_type: 41
+    first_data: [ 1, 2, 3, 4, 5, 6 ]
+    second_data: [ 1915, 1916, 1917, 1918, 1919, 1953 ]
+    first_data_scaling_type: NORMAL_VALUE
+    is_rune_power: true
+    cast_type: 1
+  - type: 105
+    sub_type: 51
+    first_data: [ 1, 2, 3, 4, 5, 6 ]
+    second_data: [ 1920, 1921, 1922, 1923, 1924, 1954 ]
+    first_data_scaling_type: NORMAL_VALUE
+    is_rune_power: true
+    cast_type: 1
+  - type: 106
+    sub_type: 11
+    first_data: [ 1, 2, 3, 4, 5, 6 ]
+    second_data: [ 1925, 1926, 1927, 1928, 1929, 1955 ]
+    first_data_scaling_type: NORMAL_VALUE
+    is_rune_power: true
+    cast_type: 0
+  - type: 106
+    sub_type: 21
+    first_data: [ 1, 2, 3, 4, 5, 6 ]
+    second_data: [ 1930, 1931, 1932, 1933, 1934, 1956 ]
+    first_data_scaling_type: NORMAL_VALUE
+    is_rune_power: true
+    cast_type: 1
+  - type: 106
+    sub_type: 31
+    first_data: [ 1, 2, 3, 4, 5, 6 ]
+    second_data: [ 1935, 1936, 1937, 1938, 1939, 1957 ]
+    first_data_scaling_type: NORMAL_VALUE
+    is_rune_power: true
+    cast_type: 1
+  - type: 106
+    sub_type: 41
+    first_data: [ 1, 2, 3, 4, 5, 6 ]
+    second_data: [ 1940, 1941, 1942, 1943, 1944, 1958 ]
+    first_data_scaling_type: NORMAL_VALUE
+    is_rune_power: true
+    cast_type: 1
+  - type: 106
+    sub_type: 51
+    first_data: [ 1, 2, 3, 4, 5, 6 ]
+    second_data: [ 1945, 1946, 1947, 1948, 1949, 1959 ]
+    first_data_scaling_type: NORMAL_VALUE
+    is_rune_power: true
+    cast_type: 0

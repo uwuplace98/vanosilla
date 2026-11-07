@@ -1,0 +1,13 @@
+# Teoman Topp
+recipes:
+- item_vnum: 4262 # 金福
+  quantity: 1
+  producer_map_npc_id: 2028 # Teoman Topp
+  items:
+  - item_vnum: 2238 #
+    quantity: 1
+  - item_vnum: 2358 #
+    quantity: 1
+  - item_vnum: 2357 #
+    quantity: 1
+

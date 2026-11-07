@@ -1,0 +1,10 @@
+random_boxes:
+  - item_vnum: 5324 # Raidbox item vnum - you have to choose it
+    categories:
+      #==================================================
+      - chance: 10000  #1 to 10000   #1% to get very rare drop
+        items:
+          - item_vnum: 5238   # Magical Ski Box
+            quantity: 1
+
+     

@@ -1,0 +1,7 @@
+recipes:
+- item_vnum: 2611
+  quantity: 1
+  producer_item_vnum: 5903
+  items:
+  - item_vnum: 9564
+    quantity: 50

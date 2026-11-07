@@ -1,0 +1,14 @@
+random_boxes:
+  - item_vnum: 9842 # Raidbox item vnum - you have to choose it
+    categories:
+      - chance: 1  #1 to 10000   #0.01% to get very rare drop
+        items:
+          - item_vnum: 4262   # 金福
+            quantity: 1
+    
+      #==================================================
+      - chance: 9999  #1 to 10000   #99.99% to get uncommon drop
+        items:
+          - item_vnum: 2358   # 武之神卡片
+            quantity: 1
+        

@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "GameChannel": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:9623;http://localhost:9631"
+    }
+  }
+}

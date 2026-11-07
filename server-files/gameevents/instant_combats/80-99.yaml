@@ -1,0 +1,157 @@
+map_id: 2004    #default IC map
+required_damages: 45000
+return_portal_x: 47
+return_portal_y: 33
+requirements:
+  level:
+    minimum: 80
+    maximum: 99
+  heroic_level:
+    minimum: 1
+    maximum: 80
+  players:
+    minimum: 1
+    maximum: 50
+reward:
+  gold_multiplier: 80000 # 2,000 ~ 98,000
+  reputation_multiplier: 10
+  sp_points_multiplier: 10
+  family_experience: 100
+  dignity: 20
+closing_time: 00:15:00
+pre_wave_long_warning_time: 00:00:40    # "Monsters will show up in 40s"
+pre_wave_soon_warning_time: 00:00:10    # "Monsters are coming..."
+time_left_warnings:
+- 00:05:00    #10min left
+- 00:10:00    #5min left
+- 00:13:00    #2min left
+- 00:14:00    #1min left
+- 00:14:30    #30s left
+- 00:14:50    #10s left
+waves:
+#
+#
+# ===============================================================
+# Wave 1 - The Demon Dog Stalker Kertos (Part I)!
+#
+- time_start: 00:00:30
+  time_end: 00:02:45
+  title_key: IC_80_99_W1_TITLE
+
+  monsters:
+  - monster_vnum: 1007   # Sea Sand Fox
+    amount: 15
+  - monster_vnum: 1002    # Sea Sand Cutter
+    amount: 15
+  - monster_vnum: 1001    # Sea Sand Prota
+    amount: 15
+  - monster_vnum: 1000   # Sea Sand Fish
+    amount: 16
+  drops:
+    - item_vnum: 1046     # Gold
+      bunch_count: 15
+      amount_per_bunch: 10000000
+#
+#
+# ===============================================================
+# Wave 2 - The Demon Dog Stalker Kertos (Part II)!
+#
+- time_start: 00:03:15
+  time_end: 00:05:30
+  title_key: IC_80_99_W2_TITLE
+
+  monsters:
+  - monster_vnum: 1199   # Volcano Sand Mage
+    amount: 12
+  - monster_vnum: 1198    # Volcano Sand Archer
+    amount: 12
+  - monster_vnum: 1197    # Volcano Sand Gladiator
+    amount: 12
+  - monster_vnum: 1196    # Volcano Sand Spirit
+    amount: 12
+  - monster_vnum: 1199   # Quicksand Basilisk
+    amount: 13
+  drops:
+    - item_vnum: 1046     # Gold
+      bunch_count: 15
+      amount_per_bunch: 10000000
+#
+#
+# ===============================================================
+# Wave 3 - The Demon Dog Stalker Kertos (Part III)!
+#
+- time_start: 00:06:00
+  time_end: 00:08:15
+  title_key: IC_80_99_W3_TITLE
+
+  monsters:
+  - monster_vnum: 1305     # Shay's Guard Bomber
+    amount: 15
+  - monster_vnum: 1304    # Shay's Guard Hunter
+    amount: 15
+  - monster_vnum: 1303    # Shay's Guard Assassin
+    amount: 15
+  - monster_vnum: 1302    # Shay's Guard Samurai
+    amount: 15
+  - monster_vnum: 1194   # Quicksand Giant
+    amount: 16
+  drops:
+    - item_vnum: 1046     # Gold
+      bunch_count: 15
+      amount_per_bunch: 10000000
+#
+# ===============================================================
+# Wave 4 - The Demon Dog Stalker Kertos (Part IV)!
+#
+- time_start: 00:08:45
+  time_end: 00:11:00
+  title_key: IC_80_99_W4_TITLE
+
+  monsters:
+  - monster_vnum: 1902     # Desert Robber Exploration Team Bomber
+    amount: 15
+  - monster_vnum: 1901    # Desert Robber Exploration Team Hunter
+    amount: 15
+  - monster_vnum: 1900   # Desert Robber Exploration Team Samurai
+    amount: 15
+  - monster_vnum: 1045    # Blaze Hound
+    amount: 15
+  - monster_vnum: 1043   # Flame Spider Valaket
+    amount: 15
+  - monster_vnum: 1042   # Magmaros
+    amount: 15
+  drops:
+    - item_vnum: 1046     # Gold
+      bunch_count: 15
+      amount_per_bunch: 10000000
+#
+#
+# ===============================================================
+# Wave 5 - The Demon Dog Stalker Kertos [BOSS] (End Part)!
+#
+- time_start: 00:11:30
+  time_end: 00:15:00
+  title_key: IC_80_99_W5_TITLE
+
+  monsters:
+  - monster_vnum: 1903   # High Priest of the Fire God
+    amount: 13
+  - monster_vnum: 1053   # Blazing Creature
+    amount: 13
+  - monster_vnum: 1051   # Phoenix
+    amount: 13
+  - monster_vnum: 1049   # Lava Ghost
+    amount: 10
+  - monster_vnum: 1048    # Strong Burning Leash
+    amount: 14
+  - monster_vnum: 1047    # Flame Giant
+    amount: 14
+  - monster_vnum: 637 # (BOSS) Strong Demon Dog Kertos
+    amount: 1
+  drops:
+    - item_vnum: 1046     # Gold
+      bunch_count: 1
+      amount_per_bunch: 10000000
+    - item_vnum: 13236     # 
+      bunch_count: 1
+    

@@ -1,0 +1,19 @@
+recipes:
+- item_vnum: 1840
+  quantity: 1
+  producer_item_vnum: 1320
+  items:
+  - item_vnum: 1320
+    quantity: 1
+- item_vnum: 1841
+  quantity: 1
+  producer_item_vnum: 1320
+  items:
+  - item_vnum: 1320
+    quantity: 1
+- item_vnum: 1842
+  quantity: 1
+  producer_item_vnum: 1320
+  items:
+  - item_vnum: 1320
+    quantity: 1

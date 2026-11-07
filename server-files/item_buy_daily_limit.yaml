@@ -1,0 +1,4 @@
+# Configuration related to Item Buy Daily Limit
+items:
+  - item_vnum: 2673  # Sparring Monster Cage
+    amount: 30 # Amount maximum per day

@@ -1,0 +1,120 @@
+tattoo_upgrade:
+  - upgrade: 1
+    success: 80
+    major_fail: 0
+    gold: 30000
+    items:
+      - vnum: 2411
+        quantity: 17
+      - vnum: 2416
+        quantity: 7
+      - vnum: 2408
+        quantity: 6
+  - upgrade: 2
+    success: 60
+    major_fail: 10
+    gold: 67000
+    items:
+      - vnum: 2411
+        quantity: 19
+      - vnum: 2416
+        quantity: 10
+      - vnum: 2408
+        quantity: 7
+  - upgrade: 3
+    success: 50
+    major_fail: 15
+    gold: 140000
+    items:
+      - vnum: 2411
+        quantity: 21
+      - vnum: 2416
+        quantity: 13
+      - vnum: 2408
+        quantity: 8
+  - upgrade: 4
+    success: 35
+    major_fail: 25
+    gold: 230000
+    items:
+      - vnum: 2411
+        quantity: 25
+      - vnum: 2416
+        quantity: 16
+      - vnum: 2408
+        quantity: 9
+      - vnum: 2410
+        quantity: 15
+  - upgrade: 5
+    success: 20
+    major_fail: 30
+    gold: 380000
+    items:
+      - vnum: 2411
+        quantity: 30
+      - vnum: 2416
+        quantity: 20
+      - vnum: 2408
+        quantity: 10
+      - vnum: 2410
+        quantity: 20
+  - upgrade: 6
+    success: 10
+    major_fail: 35
+    gold: 540000
+    items:
+      - vnum: 2411
+        quantity: 35
+      - vnum: 2416
+        quantity: 25
+      - vnum: 2408
+        quantity: 12
+      - vnum: 2410
+        quantity: 25
+      - vnum: 2474
+        quantity: 3
+  - upgrade: 7
+    success: 5
+    major_fail: 50
+    gold: 770000
+    items:
+      - vnum: 2411
+        quantity: 60
+      - vnum: 2416
+        quantity: 30
+      - vnum: 2408
+        quantity: 20
+      - vnum: 2410
+        quantity: 20
+      - vnum: 2474
+        quantity: 4
+  - upgrade: 8
+    success: 2
+    major_fail: 70
+    gold: 960000
+    items:
+      - vnum: 2411
+        quantity: 80
+      - vnum: 2416
+        quantity: 40
+      - vnum: 2408
+        quantity: 30
+      - vnum: 2410
+        quantity: 25
+      - vnum: 2412
+        quantity: 3
+  - upgrade: 9
+    success: 1
+    major_fail: 90
+    gold: 1200000
+    items:
+      - vnum: 2411
+        quantity: 100
+      - vnum: 2416
+        quantity: 80
+      - vnum: 2408
+        quantity: 40
+      - vnum: 2410
+        quantity: 40
+      - vnum: 2412
+        quantity: 4

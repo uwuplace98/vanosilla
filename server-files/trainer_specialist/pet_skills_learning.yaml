@@ -1,0 +1,25 @@
+# Configuration related to Pet Trainer Specialist Card - Pet Skills Learning
+
+skills:
+  - heroic_level: 10 # First heroic level to reach to get the first skill
+    possible_skills:
+      - 1797
+      - 1804
+      - 1811
+      - 1818
+      - 1825
+  - heroic_level: 20 # Second heroic level to reach to get the second skill
+    possible_skills:
+      - 1797
+      - 1804
+      - 1811
+      - 1818
+      - 1825
+upgrade_skills_hero_level: # Upgrade at x Pet HeroLevel one of the two learned skills
+  - 30
+  - 35
+  - 40
+  - 45
+  - 50
+  - 55
+  - 60

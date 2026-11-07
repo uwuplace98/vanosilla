@@ -1,0 +1,361 @@
+recipes:
+- item_vnum: 2487
+  quantity: 1
+  producer_item_vnum: 2486
+  items:
+  - item_vnum: 0
+    quantity: 1
+  - item_vnum: 2074
+    quantity: 10
+  - item_vnum: 2295
+    quantity: 2
+  - item_vnum: 2575
+    quantity: 1
+  - item_vnum: 2574
+    quantity: 1
+  - item_vnum: 2578
+    quantity: 3
+- item_vnum: 2488
+  quantity: 1
+  producer_item_vnum: 2486
+  items:
+  - item_vnum: 0
+    quantity: 1
+  - item_vnum: 10401
+    quantity: 6
+  - item_vnum: 10412
+    quantity: 2
+  - item_vnum: 2573
+    quantity: 1
+  - item_vnum: 2574
+    quantity: 1
+  - item_vnum: 2578
+    quantity: 1
+- item_vnum: 2489
+  quantity: 1
+  producer_item_vnum: 2486
+  items:
+  - item_vnum: 0
+    quantity: 1
+  - item_vnum: 2114
+    quantity: 10
+  - item_vnum: 2004
+    quantity: 10
+  - item_vnum: 2006
+    quantity: 10
+  - item_vnum: 2115
+    quantity: 13
+  - item_vnum: 2575
+    quantity: 1
+  - item_vnum: 2574
+    quantity: 1
+  - item_vnum: 2578
+    quantity: 1
+  - item_vnum: 2579
+    quantity: 1
+- item_vnum: 2490
+  quantity: 1
+  producer_item_vnum: 2486
+  items:
+  - item_vnum: 5
+    quantity: 6
+  - item_vnum: 2117
+    quantity: 9
+  - item_vnum: 2123
+    quantity: 2
+  - item_vnum: 2206
+    quantity: 4
+  - item_vnum: 2576
+    quantity: 1
+  - item_vnum: 2574
+    quantity: 1
+- item_vnum: 2491
+  quantity: 1
+  producer_item_vnum: 2486
+  items:
+  - item_vnum: 0
+    quantity: 6
+  - item_vnum: 10401
+    quantity: 2
+  - item_vnum: 10402
+    quantity: 4
+  - item_vnum: 10400
+    quantity: 5
+  - item_vnum: 2573
+    quantity: 1
+  - item_vnum: 2574
+    quantity: 1
+  - item_vnum: 2578
+    quantity: 2
+- item_vnum: 2492
+  quantity: 1
+  producer_item_vnum: 2486
+  items:
+  - item_vnum: 0
+    quantity: 6
+  - item_vnum: 10410
+    quantity: 6
+  - item_vnum: 2576
+    quantity: 1
+  - item_vnum: 2575
+    quantity: 1
+  - item_vnum: 2579
+    quantity: 1
+  - item_vnum: 2580
+    quantity: 2
+- item_vnum: 2493
+  quantity: 1
+  producer_item_vnum: 2486
+  items:
+  - item_vnum: 0
+    quantity: 6
+  - item_vnum: 10463
+    quantity: 8
+  - item_vnum: 10464
+    quantity: 8
+  - item_vnum: 2576
+    quantity: 1
+  - item_vnum: 2575
+    quantity: 1
+  - item_vnum: 2579
+    quantity: 1
+- item_vnum: 2494
+  quantity: 1
+  producer_item_vnum: 2486
+  items:
+  - item_vnum: 2074
+    quantity: 15
+  - item_vnum: 2090
+    quantity: 5
+  - item_vnum: 2582
+    quantity: 5
+  - item_vnum: 2575
+    quantity: 1
+  - item_vnum: 2573
+    quantity: 1
+  - item_vnum: 2580
+    quantity: 4
+  - item_vnum: 2579
+    quantity: 3
+- item_vnum: 2495
+  quantity: 1
+  producer_item_vnum: 2486
+  items:
+  - item_vnum: 2227
+    quantity: 15
+  - item_vnum: 2117
+    quantity: 10
+  - item_vnum: 1178
+    quantity: 10
+  - item_vnum: 2123
+    quantity: 2
+  - item_vnum: 2576
+    quantity: 2
+  - item_vnum: 2580
+    quantity: 1
+  - item_vnum: 2578
+    quantity: 2
+- item_vnum: 2496
+  quantity: 1
+  producer_item_vnum: 2486
+  items:
+  - item_vnum: 2379
+    quantity: 8
+  - item_vnum: 10421
+    quantity: 5
+  - item_vnum: 10422
+    quantity: 3
+  - item_vnum: 2582
+    quantity: 2
+  - item_vnum: 2295
+    quantity: 2
+  - item_vnum: 2575
+    quantity: 2
+  - item_vnum: 2576
+    quantity: 1
+  - item_vnum: 2580
+    quantity: 2
+  - item_vnum: 2578
+    quantity: 1
+- item_vnum: 2497
+  quantity: 1
+  producer_item_vnum: 2486
+  items:
+  - item_vnum: 2195
+    quantity: 2
+  - item_vnum: 2117
+    quantity: 10
+  - item_vnum: 2032
+    quantity: 10
+  - item_vnum: 10415
+    quantity: 3
+  - item_vnum: 2582
+    quantity: 1
+  - item_vnum: 2380
+    quantity: 2
+  - item_vnum: 2573
+    quantity: 2
+  - item_vnum: 2575
+    quantity: 1
+  - item_vnum: 2578
+    quantity: 1
+  - item_vnum: 2579
+    quantity: 1
+- item_vnum: 2540
+  quantity: 1
+  producer_item_vnum: 2486
+  items:
+  - item_vnum: 10416
+    quantity: 17
+  - item_vnum: 2467
+    quantity: 10
+  - item_vnum: 2582
+    quantity: 5
+  - item_vnum: 2268
+    quantity: 5
+  - item_vnum: 2574
+    quantity: 1
+  - item_vnum: 2576
+    quantity: 2
+  - item_vnum: 2578
+    quantity: 4
+  - item_vnum: 2580
+    quantity: 4
+- item_vnum: 2541
+  quantity: 1
+  producer_item_vnum: 2486
+  items:
+  - item_vnum: 2379
+    quantity: 8
+  - item_vnum: 10451
+    quantity: 5
+  - item_vnum: 10452
+    quantity: 10
+  - item_vnum: 2234
+    quantity: 6
+  - item_vnum: 2575
+    quantity: 1
+  - item_vnum: 2574
+    quantity: 2
+  - item_vnum: 2578
+    quantity: 2
+  - item_vnum: 2580
+    quantity: 1
+- item_vnum: 2542
+  quantity: 1
+  producer_item_vnum: 2486
+  items:
+  - item_vnum: 10417
+    quantity: 7
+  - item_vnum: 10416
+    quantity: 10
+  - item_vnum: 2582
+    quantity: 5
+  - item_vnum: 2090
+    quantity: 5
+  - item_vnum: 2467
+    quantity: 10
+  - item_vnum: 2268
+    quantity: 5
+  - item_vnum: 2574
+    quantity: 1
+  - item_vnum: 2576
+    quantity: 2
+  - item_vnum: 2578
+    quantity: 1
+  - item_vnum: 2580
+    quantity: 2
+- item_vnum: 2543
+  quantity: 1
+  producer_item_vnum: 2486
+  items:
+  - item_vnum: 2496
+    quantity: 1
+  - item_vnum: 2541
+    quantity: 1
+  - item_vnum: 2578
+    quantity: 1
+  - item_vnum: 2579
+    quantity: 1
+  - item_vnum: 1178
+    quantity: 10
+  - item_vnum: 2577
+    quantity: 4
+- item_vnum: 2544
+  quantity: 1
+  producer_item_vnum: 2486
+  items:
+  - item_vnum: 2598
+    quantity: 3
+  - item_vnum: 2465
+    quantity: 10
+  - item_vnum: 2577
+    quantity: 3
+  - item_vnum: 2574
+    quantity: 2
+  - item_vnum: 2579
+    quantity: 2
+  - item_vnum: 2578
+    quantity: 3
+- item_vnum: 2545
+  quantity: 1
+  producer_item_vnum: 2486
+  items:
+  - item_vnum: 2607
+    quantity: 2
+  - item_vnum: 2582
+    quantity: 7
+  - item_vnum: 2307
+    quantity: 3
+  - item_vnum: 2577
+    quantity: 4
+  - item_vnum: 2574
+    quantity: 2
+  - item_vnum: 2579
+    quantity: 5
+  - item_vnum: 2578
+    quantity: 3
+  - item_vnum: 2580
+    quantity: 1
+- item_vnum: 2546
+  quantity: 1
+  producer_item_vnum: 2486
+  items:
+  - item_vnum: 10433
+    quantity: 1
+  - item_vnum: 10421
+    quantity: 10
+  - item_vnum: 2582
+    quantity: 7
+  - item_vnum: 2573
+    quantity: 2
+  - item_vnum: 2577
+    quantity: 8
+  - item_vnum: 2581
+    quantity: 5
+  - item_vnum: 2579
+    quantity: 2
+  - item_vnum: 2580
+    quantity: 1
+- item_vnum: 2547
+  quantity: 1
+  producer_item_vnum: 2486
+  items:
+  - item_vnum: 10458
+    quantity: 1
+  - item_vnum: 10442
+    quantity: 3
+  - item_vnum: 2577
+    quantity: 3
+  - item_vnum: 2574
+    quantity: 2
+  - item_vnum: 2581
+    quantity: 5
+  - item_vnum: 2579
+    quantity: 3
+  - item_vnum: 2580
+    quantity: 1
+- item_vnum: -300
+  quantity: 0
+  producer_item_vnum: 2486
+  items: []

@@ -1,0 +1,18 @@
+# Configuration related to lod
+
+min_level: 55
+map_id: 150
+exit_map_id: 98
+npc_portal_vnum: 453
+spawn_pos:
+  x: 153
+  y: 145
+exit_pos:
+  x: 6
+  y: 36
+lod_life_time_seconds: 5400 # 1.5 hours in seconds
+close_portal_time_seconds: 1800 # 30 mins in seconds
+dh_vnum: 443
+dh_spawn_time_seconds: 600 # 10 mins in seconds
+dh_life_seconds: 60 # 1 min in seconds
+#

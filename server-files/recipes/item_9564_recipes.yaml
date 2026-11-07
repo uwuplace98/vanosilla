@@ -1,0 +1,41 @@
+recipes:
+- item_vnum: 4646
+  quantity: 1
+  producer_item_vnum: 9564
+  items:
+  - item_vnum: 9564
+    quantity: 150
+- item_vnum: 9570
+  quantity: 1
+  producer_item_vnum: 9564
+  items:
+  - item_vnum: 9564
+    quantity: 100
+- item_vnum: 9568
+  quantity: 10
+  producer_item_vnum: 9564
+  items:
+  - item_vnum: 9565
+    quantity: 1
+  - item_vnum: 9564
+    quantity: 1
+- item_vnum: 2630
+  quantity: 1
+  producer_item_vnum: 9564
+  items:
+  - item_vnum: 9564
+    quantity: 5
+- item_vnum: 4661
+  quantity: 1
+  producer_item_vnum: 9564
+  items:
+  - item_vnum: 9564
+    quantity: 1
+  - item_vnum: 9565
+    quantity: 1
+- item_vnum: 2661
+  quantity: 1
+  producer_item_vnum: 9564
+  items:
+  - item_vnum: 9565
+    quantity: 50

@@ -1,0 +1,25 @@
+# Configuration related to Pet Trainer Specialist Card - Monster Spawn
+- skill_vnum: 1788  # Summon Weak Sparring Monster
+  possible_monsters: # vnums
+    - 1496 # Weak Sparring Monster
+    - 1497 # Weak Sparring Monster
+    - 1498 # Weak Sparring Monster
+  max_monster_per_map: 1 # Max monster count on the mini-land.
+  max_target_hero_level: 20 # Max Level pet attack
+  experience_given: 5 # Experience given to the mate by the sparring monster.
+- skill_vnum: 1792  # Summon Sparring Monster
+  possible_monsters: # vnums
+    - 1532 # Sparring Monster
+    - 1533 # Sparring Monster
+    - 1534 # Sparring Monster
+  max_monster_per_map: 1 # Max monster count on the mini-land.
+  max_target_hero_level: 40 # Max Level pet attack
+  experience_given: 7 # Experience given to the mate by the sparring monster.
+- skill_vnum: 1794  # Summon Strong Sparring Monster
+  possible_monsters: # vnums
+    - 1535 # Strong Sparring Monster
+    - 1536 # Strong Sparring Monster
+    - 1537 # Strong Sparring Monster
+  max_monster_per_map: 1 # Max monster count on the mini-land.
+  max_target_hero_level: 60 # Max Level pet attack
+  experience_given: 10 # Experience given to the mate by the sparring monster.
