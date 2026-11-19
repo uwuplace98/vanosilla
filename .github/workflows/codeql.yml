@@ -21,8 +21,8 @@ jobs:
             !/client-files/
             !/server-files/
           sparse-checkout-cone-mode: false
-      - uses: github/codeql-action/init@v3
+      - uses: github/codeql-action/init@v4
         with:
           languages: csharp
           build-mode: none
-      - uses: github/codeql-action/analyze@v3
+      - uses: github/codeql-action/analyze@v4
