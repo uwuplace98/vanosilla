@@ -32,7 +32,7 @@ jobs:
           N=$(git rev-list --count origin/main..origin/dev)
           echo "n=$N" >> "$GITHUB_OUTPUT"
           echo "dev ist $N Commit(s) vor main"
-      - uses: actions/setup-dotnet@v4
+      - uses: actions/setup-dotnet@v6
         if: steps.ahead.outputs.n != '0'
         with:
           dotnet-version: 8.0.x
