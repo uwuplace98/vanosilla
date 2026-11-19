@@ -1,0 +1,34 @@
+name: AI Review
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+    branches: [dev, main]
+permissions:
+  contents: read
+  pull-requests: write
+jobs:
+  review:
+    if: github.event.pull_request.draft == false && !startsWith(github.head_ref, 'ai-fix/') && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      PR: ${{ github.event.pull_request.number }}
+      PR_TITLE: ${{ github.event.pull_request.title }}
+      PR_AUTHOR: ${{ github.event.pull_request.user.login }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: .github
+      - name: Review
+        run: |
+          gh pr diff "$PR" --repo "$GITHUB_REPOSITORY" | head -c 70000 > diff.txt
+          { cat .github/scripts/context.txt
+            echo "Du bist Senior-Reviewer. Pruefe den Diff auf: Bugs, async/await-Fehler, Null-Referenzen, Race Conditions und Thread-Safety in Game-Logik, EF-Core-/SQL-Probleme, gRPC/Protobuf Breaking Changes, Duplikations- und Exploit-Risiken in Wirtschaft (Bazaar, Wallet, Inventar), Secrets im Code, fehlende Tests."
+            echo "Format: 1) Kurzfazit, 2) Befunde als Liste mit Schweregrad (kritisch/hoch/mittel/niedrig) und Datei:Zeile, 3) Konkrete Fix-Vorschlaege, 4) Test-Empfehlungen. Erfinde nichts, was nicht im Diff steht."
+          } > sys.txt
+          { printf 'PR #%s: %s\nAutor: %s\n\nDiff:\n' "$PR" "$PR_TITLE" "$PR_AUTHOR"; cat diff.txt; } > user.txt
+          bash .github/scripts/claude.sh sys.txt user.txt 4000 > out.md
+          [ -s out.md ] || exit 0
+          { echo "🤖 **AI-Review**"; echo; cat out.md; } > comment.md
+          gh pr comment "$PR" --repo "$GITHUB_REPOSITORY" --body-file comment.md

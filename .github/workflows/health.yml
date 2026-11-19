@@ -1,0 +1,40 @@
+name: Daily Health Report
+on:
+  schedule:
+    - cron: "0 5 * * *"
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+  pull-requests: read
+  actions: read
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: .github
+      - name: Report
+        run: |
+          D=$(date +%F)
+          {
+            echo "OFFENE ISSUES:"
+            gh issue list --state open --limit 60 --json number,title,labels,createdAt --jq '.[] | "#\(.number) [\(.labels | map(.name) | join(","))] \(.title) (seit \(.createdAt[:10]))"'
+            echo; echo "OFFENE PRs:"
+            gh pr list --state open --limit 30 --json number,title,createdAt,isDraft --jq '.[] | "#\(.number) \(.title) (seit \(.createdAt[:10]), draft=\(.isDraft))"'
+            echo; echo "LETZTE CI-RUNS:"
+            gh run list --limit 20 --json workflowName,headBranch,conclusion,status --jq '.[] | "\(.workflowName) @ \(.headBranch): \(.conclusion // .status)"'
+            echo; echo "BRANCHES:"
+            gh api "repos/$GITHUB_REPOSITORY/compare/main...dev" --jq '"dev ist \(.ahead_by) Commits vor main und \(.behind_by) dahinter"' 2>/dev/null || echo "Vergleich nicht moeglich"
+          } > user.txt
+          { cat .github/scripts/context.txt
+            echo "Erstelle einen Health-Report: 1) Ampelstatus (gruen/gelb/rot) mit Begruendung, 2) Top-5-Prioritaeten fuer heute, 3) Staue Issues/PRs, 4) CI-Stabilitaet, 5) Stand dev vs. main. Kompakt."
+          } > sys.txt
+          bash .github/scripts/claude.sh sys.txt user.txt 2500 > out.md
+          if [ ! -s out.md ]; then { echo "Keine KI-Auswertung (ANTHROPIC_API_KEY fehlt?). Rohdaten:"; echo; echo '```'; cat user.txt; echo '```'; } > out.md; fi
+          gh label create report --force > /dev/null 2>&1 || true
+          gh issue create --title "📊 Health Report $D" --body-file out.md --label report

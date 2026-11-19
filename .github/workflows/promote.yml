@@ -1,0 +1,65 @@
+name: Promote
+on:
+  schedule:
+    - cron: "30 2 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: promote
+  cancel-in-progress: false
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      GH_TOKEN: ${{ github.token }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: dev
+          fetch-depth: 0
+          sparse-checkout: |
+            /*
+            !/client-files/
+            !/server-files/
+          sparse-checkout-cone-mode: false
+      - name: Vorsprung pruefen
+        id: ahead
+        run: |
+          N=$(git rev-list --count origin/main..origin/dev)
+          echo "n=$N" >> "$GITHUB_OUTPUT"
+          echo "dev ist $N Commit(s) vor main"
+      - uses: actions/setup-dotnet@v4
+        if: steps.ahead.outputs.n != '0'
+        with:
+          dotnet-version: 8.0.x
+      - name: Build und Test auf dev
+        if: steps.ahead.outputs.n != '0'
+        run: |
+          dotnet restore server/NosTale-Emu.sln
+          dotnet build server/NosTale-Emu.sln -c Release --no-restore
+          dotnet test server/NosTale-Emu.sln -c Release --no-build
+      - name: Changelog
+        if: steps.ahead.outputs.n != '0'
+        run: |
+          git log origin/main..origin/dev --no-merges --pretty='- %h %s (%an)' | head -n 150 > user.txt
+          { cat .github/scripts/context.txt
+            echo "Schreibe einen Changelog-Eintrag (Markdown, max. 15 Zeilen) fuer diese Commits: was wurde geaendert, welche Module betroffen, Risiken oder Migrationen. Keine Ueberschrift der Ebene 1."
+          } > sys.txt
+          bash .github/scripts/claude.sh sys.txt user.txt 1500 > entry.md
+          [ -s entry.md ] || cp user.txt entry.md
+          mkdir -p docs/auto
+          { echo "# Auto-Changelog"; echo; echo "## $(date +%F)"; echo; cat entry.md; echo; if [ -f docs/auto/CHANGELOG.md ]; then tail -n +2 docs/auto/CHANGELOG.md; fi; } > new.md
+          mv new.md docs/auto/CHANGELOG.md
+          git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/auto/CHANGELOG.md
+          git commit -m "docs: changelog $(date +%F)"
+          git push origin dev
+      - name: dev nach main mergen und Release taggen
+        if: steps.ahead.outputs.n != '0'
+        run: |
+          gh api -X POST "repos/$GITHUB_REPOSITORY/merges" -f base=main -f head=dev -f commit_message="release: dev -> main $(date +%F)"
+          gh release create "v$(date +%Y.%m.%d-%H%M)" --target main --title "Release $(date +%F)" --notes-file entry.md

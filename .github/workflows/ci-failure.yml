@@ -1,0 +1,47 @@
+name: CI Failure Analyst
+on:
+  workflow_run:
+    workflows: [CI, Promote]
+    types: [completed]
+permissions:
+  contents: read
+  actions: write
+  issues: write
+jobs:
+  analyze:
+    if: github.event.workflow_run.conclusion == 'failure' && contains(fromJSON('["dev","main"]'), github.event.workflow_run.head_branch)
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      RUN_ID: ${{ github.event.workflow_run.id }}
+      RUN_URL: ${{ github.event.workflow_run.html_url }}
+      WF: ${{ github.event.workflow_run.name }}
+      BRANCH: ${{ github.event.workflow_run.head_branch }}
+      SHA: ${{ github.event.workflow_run.head_sha }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: .github
+      - name: Analyse und Issue
+        run: |
+          for l in ci-failure bug ai-fix main-broken; do gh label create "$l" --force > /dev/null 2>&1 || true; done
+          TITLE="CI fehlgeschlagen: $WF @ $BRANCH"
+          OPEN=$(gh issue list --label ci-failure --state open --json number,title)
+          SAME=$(echo "$OPEN" | jq -r --arg t "$TITLE" '.[] | select(.title == $t) | .number' | head -n1)
+          if [ -n "$SAME" ]; then
+            gh issue comment "$SAME" --body "Erneut fehlgeschlagen: $RUN_URL"
+            exit 0
+          fi
+          [ "$(echo "$OPEN" | jq length)" -ge 3 ] && { echo "Schon 3 offene CI-Issues, ueberspringe."; exit 0; }
+          gh run view "$RUN_ID" --log-failed 2>/dev/null | tail -c 14000 > log.txt || true
+          { cat .github/scripts/context.txt
+            echo "Analysiere den fehlgeschlagenen CI-Lauf. Nenne: Root Cause, betroffene Datei(en), konkreten Fix (Codeausschnitt), und ob es flaky oder Infrastruktur ist. Kurz und praezise."
+          } > sys.txt
+          { printf 'Workflow: %s\nBranch: %s\nCommit: %s\n\nLog (Ende):\n' "$WF" "$BRANCH" "$SHA"; cat log.txt; } > user.txt
+          bash .github/scripts/claude.sh sys.txt user.txt 2500 > out.md
+          { echo "**Run:** $RUN_URL"; echo; if [ -s out.md ]; then cat out.md; else echo "(Keine KI-Analyse verfuegbar. Siehe Log.)"; echo; echo '```'; tail -n 40 log.txt; echo '```'; fi
+            echo; echo "_Der Fix-Agent wurde automatisch gestartet._"; } > body.md
+          LABELS="ci-failure,bug,ai-fix"; [ "$BRANCH" = "main" ] && LABELS="$LABELS,main-broken"
+          URL=$(gh issue create --title "$TITLE" --body-file body.md --label "$LABELS")
+          gh workflow run ai-fix.yml -f issue="${URL##*/}"

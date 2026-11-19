@@ -1,0 +1,47 @@
+name: Weekly Architecture Wiki
+on:
+  schedule:
+    - cron: "0 3 * * 1"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  wiki:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: dev
+          sparse-checkout: |
+            /*
+            !/client-files/
+            !/server-files/
+          sparse-checkout-cone-mode: false
+      - name: Architektur generieren
+        run: |
+          {
+            echo "README:"; head -c 9000 README.md
+            echo; echo "ANALYSE:"; head -c 9000 ANALYSE.md 2>/dev/null
+            echo; echo "VERZEICHNISSE server/srcs:"; find server/srcs -maxdepth 2 -type d 2>/dev/null | head -n 300
+            echo; echo "PROJEKTE UND PROTOS:"; find server \( -name '*.csproj' -o -name '*.proto' \) 2>/dev/null | head -n 400
+          } > user.txt
+          { cat .github/scripts/context.txt
+            echo "Erstelle eine Wiki-Seite 'Architecture' in Markdown: Systemueberblick, Mermaid-Diagramm der Services und ihrer Kommunikation, Beschreibung je Modul (Zweck, wichtige Projekte), Datenfluesse, Build/Test/Deploy, Onboarding-Pfad fuer neue Entwickler. Leite nur ab, was durch die Eingaben belegt ist, und markiere Vermutungen als solche."
+          } > sys.txt
+          bash .github/scripts/claude.sh sys.txt user.txt 6000 > Architecture.md
+          [ -s Architecture.md ] || exit 0
+          mkdir -p docs/wiki && cp Architecture.md docs/wiki/Architecture.md
+          git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/wiki
+          if ! git diff --cached --quiet; then git commit -m "docs(wiki): update Architecture"; git push origin dev; fi
+      - name: GitHub-Wiki synchronisieren (falls initialisiert)
+        continue-on-error: true
+        run: |
+          [ -f Architecture.md ] || exit 0
+          git clone "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.wiki.git" wiki 2>/dev/null || { echo "Wiki ist noch nicht initialisiert (einmal eine Seite im Wiki-Tab anlegen)."; exit 0; }
+          cp Architecture.md wiki/Architecture.md
+          cd wiki && git config user.name "github-actions[bot]" && git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A && { git diff --cached --quiet || { git commit -m "Update Architecture" && git push; }; }

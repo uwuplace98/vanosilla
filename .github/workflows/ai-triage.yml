@@ -1,0 +1,48 @@
+name: AI Triage
+on:
+  issues:
+    types: [opened]
+  workflow_dispatch:
+    inputs:
+      issue:
+        description: Issue-Nummer
+        required: true
+permissions:
+  contents: read
+  issues: write
+  actions: write
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      N: ${{ github.event.inputs.issue || github.event.issue.number }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: .github
+      - name: Triage
+        run: |
+          gh issue view "$N" --json title,body,state,labels > issue.json
+          [ "$(jq -r .state issue.json)" = "OPEN" ] || exit 0
+          if jq -e '.labels | map(.name) | any(. == "report" or . == "ci-failure" or . == "ai-generated")' issue.json >/dev/null; then exit 0; fi
+          { cat .github/scripts/context.txt
+            echo 'Triagiere das Issue. Antworte NUR mit JSON ohne Markdown: {"labels":[...],"priority":"p0|p1|p2|p3","area":"bazaar|login|database|family|plugins|client-files|translations|infra|other","summary":"...","questions":["fehlende Infos"],"likely_files":["Pfade"],"autofix_candidate":true|false}. Erlaubte Labels: bug, feature, question, docs, security, performance, needs-info, translation. autofix_candidate nur true, wenn der Fehler im Code klar eingrenzbar ist.'
+          } > sys.txt
+          jq -r '"Titel: " + .title + "\n\n" + (.body // "")' issue.json > user.txt
+          bash .github/scripts/claude.sh sys.txt user.txt 1500 | sed '/^```/d' > clean.json
+          jq -e . clean.json >/dev/null 2>&1 || exit 0
+          jq '{labels: (((.labels // []) + ["priority:" + (.priority // "p2"), "area:" + (.area // "other")]) | unique)}' clean.json \
+            | gh api -X POST "repos/$GITHUB_REPOSITORY/issues/$N/labels" --input - > /dev/null
+          jq -r '"🤖 **Auto-Triage**\n\n**Zusammenfassung:** \(.summary // "-")\n**Prioritaet:** \(.priority // "p2") | **Bereich:** \(.area // "other")\n"
+            + (if ((.likely_files // []) | length) > 0 then "\n**Wahrscheinlich betroffen:**\n" + ((.likely_files) | map("- `" + . + "`") | join("\n")) + "\n" else "" end)
+            + (if ((.questions // []) | length) > 0 then "\n**Rueckfragen:**\n" + ((.questions) | map("- " + .) | join("\n")) + "\n" else "" end)
+            + (if (.autofix_candidate // false) then "\n_Der Fix-Agent startet automatisch._" else "" end)' clean.json > comment.md
+          gh issue comment "$N" --body-file comment.md
+          AUTO=$(jq -r '(.autofix_candidate // false) and (((.labels // []) | index("needs-info")) == null)' clean.json)
+          if [ "$AUTO" = "true" ]; then
+            gh label create ai-fix --force > /dev/null 2>&1 || true
+            gh issue edit "$N" --add-label ai-fix
+            gh workflow run ai-fix.yml -f issue="$N"
+          fi

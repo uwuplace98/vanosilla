@@ -1,0 +1,32 @@
+name: Backlog Sweeper
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+  actions: write
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Naechstes Issue anstossen
+        run: |
+          BUSY=$(( $(gh run list --workflow ai-fix.yml --status in_progress --json databaseId --jq length) + $(gh run list --workflow ai-fix.yml --status queued --json databaseId --jq length) ))
+          [ "$BUSY" -gt 0 ] && { echo "Fix-Agent ist beschaeftigt."; exit 0; }
+          # 1) unbearbeitete Issues ohne Labels -> Triage
+          RAW=$(gh issue list --state open --limit 100 --json number,labels,createdAt)
+          UNTRIAGED=$(echo "$RAW" | jq -r 'map(select((.labels | length) == 0)) | sort_by(.createdAt) | .[0].number // empty')
+          if [ -n "$UNTRIAGED" ]; then gh workflow run ai-triage.yml -f issue="$UNTRIAGED"; exit 0; fi
+          # 2) aeltester offener Bug ohne Agent-Label -> Fix
+          BUG=$(gh issue list --state open --label bug --limit 100 --json number,labels,createdAt | jq -r '
+            map(select((.labels | map(.name)) as $l | all(["ai-fix","needs-human","needs-info","report","ai-generated"][]; . as $x | ($l | index($x)) == null)))
+            | sort_by(.createdAt) | .[0].number // empty')
+          if [ -n "$BUG" ]; then
+            gh label create ai-fix --force > /dev/null 2>&1 || true
+            gh issue edit "$BUG" --add-label ai-fix
+            gh workflow run ai-fix.yml -f issue="$BUG"
+          fi

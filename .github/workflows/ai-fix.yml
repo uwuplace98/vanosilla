@@ -1,0 +1,161 @@
+name: AI Fix Agent
+on:
+  workflow_dispatch:
+    inputs:
+      issue:
+        description: Issue-Nummer
+        required: true
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+  actions: write
+  id-token: write
+
+concurrency:
+  group: ai-fix
+  cancel-in-progress: false
+
+jobs:
+  fix:
+    if: github.event_name == 'workflow_dispatch' || github.event.label.name == 'ai-fix'
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      ISSUE: ${{ github.event.inputs.issue || github.event.issue.number }}
+      GH_TOKEN: ${{ github.token }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      MAX_ATTEMPTS: 3
+      SLN: server/NosTale-Emu.sln
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: dev
+          sparse-checkout: |
+            /*
+            !/client-files/
+            !/server-files/
+          sparse-checkout-cone-mode: false
+
+      - name: Build-Artefakte vom Commit ausschliessen
+        run: |
+          printf '%s\n' 'bin/' 'obj/' 'dist/' '.vs/' 'TestResults/' '*.user' '*\\*' >> .git/info/exclude
+
+      - name: Voraussetzungen und Versuchs-Limit
+        id: guard
+        run: |
+          for l in ai-fix ai-generated needs-human ai-fix-failed tests-failing; do gh label create "$l" --force > /dev/null 2>&1 || true; done
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            gh issue comment "$ISSUE" --body "⚠️ Repo-Secret ANTHROPIC_API_KEY fehlt (Settings, Secrets and variables, Actions). Der Fix-Agent kann nicht starten."
+            echo "stop=true" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          STATE=$(gh issue view "$ISSUE" --json state --jq .state)
+          if [ "$STATE" != "OPEN" ]; then echo "stop=true" >> "$GITHUB_OUTPUT"; exit 0; fi
+          N=$(gh issue view "$ISSUE" --json comments --jq '[.comments[] | select(.body | startswith("🔁 Fix-Versuch"))] | length')
+          if [ "$N" -ge "$MAX_ATTEMPTS" ]; then
+            gh issue edit "$ISSUE" --add-label needs-human --add-label ai-fix-failed
+            gh issue comment "$ISSUE" --body "🛑 $N Fix-Versuche ohne Erfolg. Der Agent gibt auf, das Issue braucht einen Menschen."
+            echo "stop=true" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          gh issue comment "$ISSUE" --body "🔁 Fix-Versuch $((N+1))/$MAX_ATTEMPTS gestartet ([Run](${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}))"
+
+      - uses: actions/setup-dotnet@v4
+        if: steps.guard.outputs.stop != 'true'
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Issue laden
+        if: steps.guard.outputs.stop != 'true'
+        run: |
+          gh issue view "$ISSUE" --json title,body,comments > issue.json
+          echo "TITLE=$(jq -r '.title | gsub("[\\r\\n]"; " ")' issue.json)" >> "$GITHUB_ENV"
+
+      - name: Claude fixt
+        if: steps.guard.outputs.stop != 'true'
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          github_token: ${{ github.token }}
+          prompt: |
+            Du arbeitest im Repo Vanosilla (.NET 8, Solution server/NosTale-Emu.sln) auf Branch dev.
+            Lies issue.json (GitHub-Issue #${{ env.ISSUE }}) und CLAUDE.md. Die Regel "Kein git push" in CLAUDE.md gilt nur fuer lokale Sessions und wird hier vom Workflow erledigt; du selbst committest und pushst trotzdem nicht.
+            Behebe das Problem mit der kleinstmoeglichen, sauberen Aenderung. Wenn das Issue ein kaputter Build ist, behebe die Build-Fehler.
+            Ergaenze Unit-Tests, wenn die Aenderung testbar ist (xUnit-Projekt neben dem betroffenen Projekt anlegen und der Solution hinzufuegen, falls keines existiert).
+            Pruefe mit dotnet build server/NosTale-Emu.sln und dotnet test.
+            Aendere keine Secrets, nichts unter .github/ und nichts unter client-files/.
+            Schreibe eine kurze Zusammenfassung (was, warum, wie getestet) nach ai-summary.md.
+          claude_args: >-
+            --max-turns 60
+            --allowedTools "Read,Edit,Write,Glob,Grep,Bash(dotnet build:*),Bash(dotnet test:*),Bash(dotnet restore:*),Bash(dotnet new:*),Bash(dotnet sln:*),Bash(dotnet add:*),Bash(git diff:*),Bash(git status:*),Bash(ls:*)"
+
+      - name: Unabhaengige Verifikation
+        id: verify
+        if: steps.guard.outputs.stop != 'true'
+        continue-on-error: true
+        run: |
+          dotnet restore "$SLN"
+          dotnet build "$SLN" -c Release --no-restore
+          dotnet test "$SLN" -c Release --no-build
+
+      - name: Self-Review durch zweites Claude
+        id: review
+        if: steps.guard.outputs.stop != 'true' && steps.verify.outcome == 'success'
+        run: |
+          git add -A -- server server-translations
+          git diff --cached | head -c 80000 > diff.txt
+          git reset -q
+          if [ ! -s diff.txt ]; then echo "verdict=EMPTY" >> "$GITHUB_OUTPUT"; exit 0; fi
+          echo "Du bist strenger Reviewer fuer ein .NET-8-Backend (nosTale-Emulator). Pruefe den Diff gegen das Issue. Antworte in Zeile 1 NUR mit APPROVE oder REJECT, danach kurze Begruendung. REJECT bei: Secrets, entfernten oder abgeschwaechten Tests, Sicherheits- oder Exploit-Risiken, Scope-Creep, offensichtlichen Bugs." > sys.txt
+          { echo "Issue: $TITLE"; echo; echo "Diff:"; cat diff.txt; } > user.txt
+          bash .github/scripts/claude.sh sys.txt user.txt 800 > review.txt
+          echo "verdict=$(head -n1 review.txt | tr -d '[:space:]*')" >> "$GITHUB_OUTPUT"
+
+      - name: Zusammenfassung vorbereiten
+        if: steps.guard.outputs.stop != 'true'
+        run: |
+          [ -f ai-summary.md ] || echo "Automatischer Fix." > ai-summary.md
+          printf '\n\nCloses #%s\n' "$ISSUE" >> ai-summary.md
+
+      - name: Pull Request erstellen
+        id: pr
+        if: steps.guard.outputs.stop != 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ github.token }}
+          base: dev
+          branch: ai-fix/issue-${{ env.ISSUE }}
+          title: "fix: ${{ env.TITLE }} (#${{ env.ISSUE }})"
+          commit-message: "fix: ${{ env.TITLE }} (#${{ env.ISSUE }})"
+          body-path: ai-summary.md
+          labels: ai-generated
+          add-paths: |
+            server/**
+            server-translations/**
+
+      - name: Mergen oder neu versuchen
+        if: steps.guard.outputs.stop != 'true'
+        env:
+          PR: ${{ steps.pr.outputs.pull-request-number }}
+          VERIFY: ${{ steps.verify.outcome }}
+          VERDICT: ${{ steps.review.outputs.verdict }}
+        run: |
+          if [ -z "$PR" ]; then
+            gh issue edit "$ISSUE" --add-label needs-human --add-label ai-fix-failed
+            gh issue comment "$ISSUE" --body "🤖 Der Agent hat keine Aenderung erzeugt. Das Issue braucht mehr Kontext oder einen Menschen."
+            exit 0
+          fi
+          if [ "$VERIFY" = "success" ] && [ "$VERDICT" = "APPROVE" ]; then
+            { echo "✅ Build und Tests gruen, Self-Review: APPROVE."; echo; cat review.txt; } > c.md
+            gh pr comment "$PR" --body-file c.md
+            if gh pr merge "$PR" --squash --delete-branch; then
+              gh issue comment "$ISSUE" --body "✅ Gefixt und in dev gemerged (#$PR). Die naechste Promotion nach main laeuft automatisch."
+              exit 0
+            fi
+          fi
+          gh pr edit "$PR" --add-label tests-failing || true
+          gh pr comment "$PR" --body "⚠️ Nicht gemerged. Verifikation: $VERIFY, Review: ${VERDICT:-keins}. PR wird geschlossen, ein neuer Versuch startet."
+          gh pr close "$PR" --delete-branch || true
+          gh workflow run ai-fix.yml -f issue="$ISSUE"

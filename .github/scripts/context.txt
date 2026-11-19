@@ -1,0 +1,1 @@
+Projekt: Vanosilla, ein nosTale-Server-Emulator. .NET 8, gRPC (Protobuf), EF Core mit PostgreSQL, MongoDB fuer Logs, Redis, MQTT-Events. Solution: server/NosTale-Emu.sln, Projekte unter server/srcs (BazaarServer, DatabaseServer, LoginServer, FamilyServer, _plugins, PhoenixLib). Branches: dev (Arbeit), main (stabil). Antworte immer auf Deutsch.
