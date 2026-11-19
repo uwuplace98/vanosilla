@@ -31,7 +31,7 @@ jobs:
       MAX_ATTEMPTS: 3
       SLN: server/NosTale-Emu.sln
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: dev
           sparse-checkout: |
