@@ -62,7 +62,7 @@ jobs:
           fi
           gh issue comment "$ISSUE" --body "🔁 Fix-Versuch $((N+1))/$MAX_ATTEMPTS gestartet ([Run](${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}))"
 
-      - uses: actions/setup-dotnet@v4
+      - uses: actions/setup-dotnet@v6
         if: steps.guard.outputs.stop != 'true'
         with:
           dotnet-version: 8.0.x
